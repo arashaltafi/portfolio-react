@@ -11,4 +11,12 @@
         @apply w-full h-screen flex items-center justify-normal flex-col bg-no-repeat bg-cover;
         background-image: url('/public/assets/background.png');
     }
+
+    .radial-background-red {
+        background: radial-gradient(circle, #F44336 0%, transparent 50%);
+    }
+
+    .radial-background-green {
+        background: radial-gradient(circle, #4CAF50 0%, transparent 50%);
+    }
 }
