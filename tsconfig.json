@@ -1,9 +1,12 @@
 {
   "compilerOptions": {
-    "target": "es5",
+    "target": "es2022",
     "lib": [
+      "es5",
+      "es6",
       "dom",
       "dom.iterable",
+      "WebWorker",
       "esnext"
     ],
     "allowJs": true,
@@ -22,5 +25,5 @@
   },
   "include": [
     "src"
-  ]
+, "src/sw.ts"  ]
 }
