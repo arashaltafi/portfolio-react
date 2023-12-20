@@ -32,4 +32,16 @@
     .radial-background-green {
         background: radial-gradient(circle, #4CAF50 0%, transparent 50%);
     }
+
+    .text-shadow-white {
+        text-shadow: 5px 5px 20px #fff;
+    }
+
+    .title {
+        @apply text-lg md:text-xl lg:text-2xl font-bold text-white text-shadow-white transition duration-100 hover:text-yellow-300 hover:cursor-pointer
+    }
+
+    .subtitle {
+        @apply text-xs md:text-sm lg:text-lg font-bold text-white text-shadow-white transition duration-100 hover:text-yellow-300 hover:cursor-pointer
+    }
 }

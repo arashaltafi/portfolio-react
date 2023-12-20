@@ -5,13 +5,13 @@ const Home = () => {
     return (
         <div className="h-screen w-full flex justify-center items-center flex-col text-center">
             
-            <header className="text-white">
+            <header className="w-full">
                 <HeaderComponent />
             </header>
             <main className="flex items-center justify-center text-white flex-1 text-center">
                 <HomeComponent />
             </main>
-            <footer className="text-white">footer</footer>
+            <footer className="w-full">footer</footer>
         </div>
     )
 }

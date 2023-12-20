@@ -17,7 +17,7 @@ const HomeComponent = () => {
     `;
 
     return (
-        <div className='text-2xl md:text-4xl lg:text-7xl drop-shadow-xl shadow-red-500'>
+        <div className='text-2xl md:text-4xl lg:text-7xl'>
             <Typewriter
                 options={{
                     autoStart: true,
