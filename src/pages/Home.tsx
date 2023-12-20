@@ -2,8 +2,16 @@ import FooterComponent from "../Components/FooterComponent"
 import HeaderComponent from "../Components/HeaderComponent"
 import HomeComponent from "../Components/HomeComponent"
 import ParticlesComponent, { ParticlesType } from "../Components/ParticlesComponent"
+import React, { useState, useEffect } from 'react';
+import { CustomHoverAnimation, CustomMouseMove } from '../utils/CustomHoverUtils'
 
 const Home = () => {
+
+    const [mousePosition, setMousePosition] = useState<{ x: number; y: number }>({ x: 0, y: 0 });
+    useEffect(() => {
+        CustomMouseMove(setMousePosition)
+    }, []);
+
     return (
         <>
             <div className="h-screen w-full flex justify-center items-center flex-col text-center">

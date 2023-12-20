@@ -26,7 +26,6 @@ export enum ParticlesType {
 }
 
 interface PropsType {
-    opacity?: number,
     particlesType?: ParticlesType
 }
 
@@ -103,7 +102,7 @@ const ParticlesComponent = (props: PropsType) => {
     })();
 
     return (
-        <div id="tsparticles" className={`opacity-${props.opacity || 10}`}></div>
+        <div id="tsparticles" className='opacity-10'></div>
     )
 }
 
