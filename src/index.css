@@ -2,14 +2,27 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box
+    }
+}
+
 @layer components {
     .btn {
         @apply bg-blue-500 text-white font-bold py-2 px-4 rounded;
     }
 
     .index-base {
-        @apply w-full h-screen flex items-center justify-normal flex-col bg-no-repeat bg-cover;
-        background-image: url('/public/assets/background.png');
+        @apply w-full h-screen flex items-center justify-normal flex-col bg-no-repeat overflow-hidden;
+        background-position: center center !important;
+        background-size: cover !important;
+        background-repeat: no-repeat !important;
+        background:
+            linear-gradient(180deg, #00000088, #ffffff22),
+            url('/public/assets/background.png');
     }
 
     .radial-background-red {

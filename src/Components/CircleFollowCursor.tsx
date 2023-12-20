@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-const CircleFollowCursor = () => {
+const CircleFollowCursor = (prop: any) => {
 
     const [position, setPosition] = useState({ x: 0, y: 0 });
 
@@ -27,7 +27,7 @@ const CircleFollowCursor = () => {
                     left: position.x,
                     zIndex: 10
                 }} />
-
+            {prop.children}
         </div>
     );
 };
