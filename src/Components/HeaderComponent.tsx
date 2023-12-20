@@ -1,10 +1,19 @@
+import { useRef } from "react";
 import { Link } from "react-router-dom"
 
 const HeaderComponent = () => {
 
+    const arash = useRef<any>()
+
     const handleClickPdf = (e: any) => {
         e.preventDefault();
         window.open("https://arashaltafi.ir/resume_en.pdf");
+    }
+
+    const changeArashTheme = () => {
+        setTimeout(() => {
+            arash.current.classList.toggle('text-yellow-300')
+        }, 100);
     }
 
     return (
@@ -15,8 +24,10 @@ const HeaderComponent = () => {
                 <Link className="hover:custom-animation hover:transition hover:duration-100 hover:delay-100 py-8 px-4" to="/resume">Resume</Link>
                 <Link className="hover:custom-animation hover:transition hover:duration-100 hover:delay-100 py-8 px-4" to="/">Home</Link>
             </div>
-            <div className="flex flex-row gap-x-8 items-center justify-center child:title">
-                <div className="hover:custom-animation-rotate hover:transition hover:duration-100 hover:delay-100 py-8 px-4" onClick={(e) => handleClickPdf(e)}>Arash Altafi</div>
+            <div className="flex flex-row gap-x-8 items-center justify-center child:title" onMouseEnter={changeArashTheme} onMouseLeave={changeArashTheme} onClick={(e) => handleClickPdf(e)}>
+                <div className="hover:custom-animation-rotate hover:transition hover:duration-100 hover:delay-100 py-8 px-4">
+                    <span ref={arash} className="text-gray-400 hover:text-yellow-300">Arash</span> Altafi
+                </div>
             </div>
         </nav>
     )
