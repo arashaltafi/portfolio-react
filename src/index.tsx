@@ -5,6 +5,7 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import * as serviceWorkerRegistration from './serviceWorkerRegistration';
 import { BrowserRouter } from 'react-router-dom';
+import 'tippy.js/dist/tippy.css';
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
