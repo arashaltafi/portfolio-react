@@ -1,3 +1,4 @@
+import FooterComponent from "../Components/FooterComponent"
 import HeaderComponent from "../Components/HeaderComponent"
 import HomeComponent from "../Components/HomeComponent"
 
@@ -11,7 +12,9 @@ const Home = () => {
             <main className="flex items-center justify-center text-white flex-1 text-center pb-[160px]">
                 <HomeComponent />
             </main>
-            <footer className="w-full">footer</footer>
+            <footer className="w-full">
+                <FooterComponent />
+            </footer>
         </div>
     )
 }
