@@ -1,6 +1,12 @@
+import ParticlesComponent, { ParticlesType } from "../Components/ParticlesComponent";
+
 const About = () => {
   return (
-    <div>About</div>
+    <div>
+      <div>About</div>
+
+      <ParticlesComponent particlesType={ParticlesType.Snow} />
+    </div>
   )
 }
 

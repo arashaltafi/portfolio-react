@@ -1,8 +1,12 @@
+import ParticlesComponent, { ParticlesType } from "../Components/ParticlesComponent"
+
 const Resume = () => {
 
   return (
-    <div className="h-screen w-full flex justify-center items-center flex-col text-center">
-      <section className="text-white">section</section>
+    <div>
+      <div>Resume</div>
+
+      <ParticlesComponent particlesType={ParticlesType.Links} />
     </div>
   )
 }
