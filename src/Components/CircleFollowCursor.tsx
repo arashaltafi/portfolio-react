@@ -5,7 +5,7 @@ const CircleFollowCursor = (prop: any) => {
     const [position, setPosition] = useState({ x: 0, y: 0 });
 
     const handleMouseMove = (event: React.MouseEvent<HTMLDivElement>) => {
-        if (event.clientY < 150) {
+        if (event.clientY < 200) {
             setPosition({ x: 0, y: 0 });
             return
         }

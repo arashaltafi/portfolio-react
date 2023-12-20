@@ -44,4 +44,22 @@
     .subtitle {
         @apply text-xs md:text-sm lg:text-lg font-bold text-white text-shadow-white transition duration-100 hover:text-yellow-300 hover:cursor-pointer
     }
+
+    .custom-animation {
+        animation: translateAndBack 0.5s ease-in-out infinite alternate;
+    }
+
+    @keyframes translateAndBack {
+        0% {
+            transform: translateY(0);
+        }
+
+        50% {
+            transform: translateY(-10px);
+        }
+
+        100% {
+            transform: translateY(0);
+        }
+    }
 }
