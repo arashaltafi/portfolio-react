@@ -21,7 +21,7 @@
         background-size: cover !important;
         background-repeat: no-repeat !important;
         background:
-            linear-gradient(180deg, #00000077, #42424255),
+            linear-gradient(180deg, #00000099, #00000088, #00000077, #00000055, #00000044, #00000033, #00000022, #00000011),
             url('/public/assets/background.png');
     }
 
