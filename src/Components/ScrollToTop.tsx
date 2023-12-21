@@ -1,11 +1,13 @@
 import React, { useEffect, useRef, useState } from 'react';
 import { Outlet, useLocation } from 'react-router';
+import ParticlesComponent, { ParticlesType } from './ParticlesComponent';
 
 const ScrollToTop = () => {
 
     const location = useLocation();
     const mainRef = useRef<any>()
     const [prev, setPrev] = useState<string>();
+    const [loading, setLoading] = useState<boolean>(false)
 
     useEffect(() => {
         let flag = true;
@@ -22,12 +24,18 @@ const ScrollToTop = () => {
             document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
             mainRef.current.scrollTo(0, 0);
         }
+
+        setLoading(true)
+
+        setTimeout(() => {
+            setLoading(false)
+        }, 500);
     }, [location]);
 
     return (
         <div
             ref={mainRef}>
-            <Outlet />
+            {loading ? <ParticlesComponent particlesType={ParticlesType.Hyperspace} /> : <Outlet />}
         </div>
     )
 };
