@@ -45,6 +45,10 @@
         @apply text-xs md:text-sm lg:text-lg font-bold text-white text-shadow-white transition duration-100 hover:text-yellow-300 hover:cursor-pointer
     }
 
+    .subtitle-withouthover {
+        @apply text-xs md:text-sm lg:text-lg font-bold text-white text-shadow-white
+    }
+
     .custom-animation {
         animation: translateAndBack 0.5s ease-in-out infinite alternate;
     }

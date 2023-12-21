@@ -7,7 +7,7 @@ const Home = () => {
 
     return (
         <>
-            <div className="h-screen w-full flex justify-center items-center flex-col text-center">
+            <div className="h-screen w-full flex justify-center items-center flex-col text-center select-none">
                 <header className="w-full zIndex20">
                     <HeaderComponent />
                 </header>
