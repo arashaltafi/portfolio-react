@@ -63,7 +63,7 @@ const Home = () => {
                     <FooterComponent />
                 </footer>
 
-                <div className='absolute bottom-0 left-0 child:font-normal child:text-gray-300 hidden md:flex flex-col items-center justify-center gap-4 py-6 px-8 lg:py-8 lg:pr-12 mb-4'>
+                <div className='absolute bottom-0 left-0 child:font-normal child:text-gray-300 flex flex-col items-center justify-center gap-4 py-6 px-8 lg:py-8 lg:pr-12 mb-4'>
                     <p className="rotate-90 text-xs md:text-sm lg:text-lg text-gray-300">Follow Me</p>
                     <span className="h-[1px] w-20 self-start bg-gray-300 mt-20 mb-16 rotate-90"></span>
                     <FaGithub className="subtitle" onClick={() => handleClickLink(LinkType.GITHUB)} />
