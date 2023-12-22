@@ -11,7 +11,7 @@ const Home = () => {
                 </main>
             </div>
 
-            <ParticlesComponent particlesType={ParticlesType.Stars} />
+            <ParticlesComponent particlesType={ParticlesType.Links} />
         </>
     )
 }

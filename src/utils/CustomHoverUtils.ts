@@ -57,4 +57,16 @@ const CustomMouseMove = (setMousePosition: Function) => {
     };
 }
 
-export { CustomHoverAnimation, CustomMouseMove }
+const CustomMouseMove2 = (setMousePosition: Function) => {
+    const handleMouseMove = (e: MouseEvent) => {
+        setMousePosition({ x: e.clientX / 250, y: e.clientY / 250 });
+    };
+
+    document.addEventListener('mousemove', handleMouseMove);
+
+    return () => {
+        document.removeEventListener('mousemove', handleMouseMove);
+    };
+}
+
+export { CustomHoverAnimation, CustomMouseMove, CustomMouseMove2 }
