@@ -6,7 +6,7 @@ const Home = () => {
 
     return (
         <>
-            <div className="relative h-screen w-full flex justify-center items-center flex-col text-center select-none">
+            <div className="relative index-home h-screen w-full flex justify-center items-center flex-col text-center select-none">
                 <footer className="w-full absolute bottom-0 left-0 right-0 zIndex20">
                     <FooterComponent />
                 </footer>

@@ -15,7 +15,7 @@
         @apply bg-blue-500 text-white font-bold py-2 px-4 rounded;
     }
 
-    .index-base {
+    .index-home {
         @apply w-full h-screen flex items-center justify-normal flex-col bg-no-repeat overflow-hidden;
         background-position: center center !important;
         background-size: cover !important;
@@ -23,6 +23,16 @@
         background:
             linear-gradient(180deg, #00000099, #00000088, #00000077, #00000055, #00000044, #00000033, #00000022, #00000011),
             url('/public/assets/background.png');
+    }
+
+    .index-about {
+        @apply w-full h-screen flex items-center justify-normal flex-col bg-no-repeat overflow-hidden;
+        background-position: center center !important;
+        background-size: cover !important;
+        background-repeat: no-repeat !important;
+        background:
+            linear-gradient(180deg, #00000099, #00000088, #00000077, #00000055, #00000044, #00000033, #00000022, #00000011),
+            url('/public/assets/background_about.png');
     }
 
     .radial-background-red {

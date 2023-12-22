@@ -76,7 +76,7 @@ function App() {
   }, [])
 
   return (
-    <div className='index-base relative'>
+    <div className='relative overflow-hidden'>
       <CircleFollowCursor>
         <Routes>
           <Route element={<ScrollToTop />}>
