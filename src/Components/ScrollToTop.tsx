@@ -30,6 +30,27 @@ const ScrollToTop = () => {
         setTimeout(() => {
             setLoading(false)
         }, 500);
+
+        let title = '';
+        switch (location.pathname) {
+            case '/':
+                title = 'Arash Altafi';
+                break;
+            case '/resume':
+                title = 'Resume';
+                break;
+            case '/contact':
+                title = 'Contact';
+                break;
+            case '/works':
+                title = 'Works';
+                break;
+            default:
+                title = 'Arash Altafi';
+                break;
+        }
+        document.title = title
+        
     }, [location]);
 
     return (

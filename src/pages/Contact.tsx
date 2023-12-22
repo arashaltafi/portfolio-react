@@ -1,6 +1,7 @@
 import ParticlesComponent, { ParticlesType } from "../Components/ParticlesComponent";
 
-const About = () => {
+const Contact = () => {  
+  
   return (
     <>
       <div className="relative index-about h-screen w-full flex justify-center items-center flex-col text-center select-none">
@@ -12,4 +13,4 @@ const About = () => {
   )
 }
 
-export default About
+export default Contact

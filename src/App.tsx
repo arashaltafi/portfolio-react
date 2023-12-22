@@ -5,7 +5,7 @@ import ScrollToTop from "./Components/ScrollToTop";
 import Home from "./pages/Home";
 import Resume from "./pages/Resume";
 import Works from "./pages/Works";
-import About from "./pages/About";
+import Contact from "./pages/Contact";
 import CircleFollowCursor from './Components/CircleFollowCursor';
 import { FaGithub } from "react-icons/fa";
 import { FaGitlab } from "react-icons/fa";
@@ -83,14 +83,14 @@ function App() {
             <Route path="/" element={<Home />} />
             <Route path="/resume" element={<Resume />} />
             <Route path="/works" element={<Works />} />
-            <Route path="/about" element={<About />} />
+            <Route path="/contact" element={<Contact />} />
           </Route>
         </Routes>
       </CircleFollowCursor>
 
       <nav className='absolute top-0 left-0 right-0 w-full flex flex-row items-stretch justify-between py-6 px-12 lg:py-8 lg:px-16 zIndex20'>
         <div className="hidden sm:flex flex-row gap-x-8 items-center justify-center child:title">
-          <Link className="hover:custom-animation hover:transition hover:duration-100 hover:delay-100 py-8 px-4" to="/about">About</Link>
+          <Link className="hover:custom-animation hover:transition hover:duration-100 hover:delay-100 py-8 px-4" to="/contact">Contact</Link>
           <Link className="hover:custom-animation hover:transition hover:duration-100 hover:delay-100 py-8 px-4" to="/works">Works</Link>
           <Link className="hover:custom-animation hover:transition hover:duration-100 hover:delay-100 py-8 px-4" to="/resume">Resume</Link>
           <Link className="hover:custom-animation hover:transition hover:duration-100 hover:delay-100 py-8 px-4" to="/">Home</Link>
