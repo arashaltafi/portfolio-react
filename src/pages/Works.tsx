@@ -10,16 +10,14 @@ const Works = () => {
   }, []);
 
   return (
-    <div className="relative index-works h-screen w-full flex justify-center items-center flex-col text-center zIndex20">
-      <div className="flex justify-center items-center text-center">
-        <h1
-          className="title text-8xl text-center"
-          style={{
-            position: 'absolute',
-            top: `calc(40% + ${mousePosition.y}px)`,
-            left: `calc(30% + ${mousePosition.x}px)`,
-          }}>Works</h1>
-      </div>
+    <div className="index-contact h-screen w-full flex justify-center items-center flex-col text-center zIndex20">
+      <h1
+        className='title text-8xl'
+        style={{
+          transform: `translate(${Math.round(mousePosition.x)}px, ${Math.round(mousePosition.y)}px)`
+        }}>
+          Works
+      </h1>
 
     </div>
   )
