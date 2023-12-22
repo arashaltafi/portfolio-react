@@ -1,6 +1,7 @@
 import React, { useEffect, useRef, useState } from 'react';
 import { Outlet, useLocation } from 'react-router';
 import ParticlesComponent, { ParticlesType } from './ParticlesComponent';
+import BounceLoader from 'react-spinners/BounceLoader'
 
 const ScrollToTop = () => {
 
@@ -25,6 +26,7 @@ const ScrollToTop = () => {
             mainRef.current.scrollTo(0, 0);
         }
 
+        //TODO check if has in cache don't set it
         setLoading(true)
 
         setTimeout(() => {
@@ -50,13 +52,17 @@ const ScrollToTop = () => {
                 break;
         }
         document.title = title
-        
+
     }, [location]);
 
     return (
         <div
             ref={mainRef}>
-            {loading ? <ParticlesComponent particlesType={ParticlesType.Hyperspace} /> : <Outlet />}
+            {loading ? <div className='w-full h-screen bg-zinc-950 flex items-center justify-center'>
+                <ParticlesComponent particlesType={ParticlesType.Hyperspace} />
+                <BounceLoader color="#FFF176" />
+            </div>
+                : <Outlet />}
         </div>
     )
 };
