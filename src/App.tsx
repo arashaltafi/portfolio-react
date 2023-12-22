@@ -13,6 +13,7 @@ import { FaTelegram } from "react-icons/fa";
 import { FaWhatsapp } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
+import NotFound from './pages/NotFound';
 
 enum LinkType {
   GITHUB = 'github',
@@ -84,6 +85,7 @@ function App() {
             <Route path="/resume" element={<Resume />} />
             <Route path="/works" element={<Works />} />
             <Route path="/contact" element={<Contact />} />
+            <Route path="*" element={<NotFound />} />
           </Route>
         </Routes>
       </CircleFollowCursor>

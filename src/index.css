@@ -51,12 +51,20 @@
         @apply text-lg md:text-xl lg:text-2xl font-bold text-white text-shadow-white transition duration-100 hover:text-yellow-300 hover:cursor-pointer
     }
 
+    .title-withouthover {
+        @apply text-lg md:text-xl lg:text-2xl font-bold text-white text-shadow-white
+    }
+
     .subtitle {
         @apply text-xs md:text-sm lg:text-lg font-bold text-white text-shadow-white transition duration-100 hover:text-yellow-300 hover:cursor-pointer
     }
 
     .subtitle-withouthover {
         @apply text-xs md:text-sm lg:text-lg font-bold text-white text-shadow-white
+    }
+
+    .btnHover {
+        @apply px-5 py-4 bg-white text-gray-800 text-2xl font-bold transition duration-100 hover:text-white hover:bg-yellow-500 rounded-2xl shadow-xl cursor-pointer
     }
 
     .custom-animation {
@@ -106,4 +114,8 @@
             transform: rotate(360deg);
         }
     }
+
+    .customHover {
+        @apply transition-all duration-100 hover:cursor-pointer shadow-slate-900 shadow-2xl rounded-xl overflow-hidden;
+      }
 }
