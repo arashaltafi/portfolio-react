@@ -147,5 +147,5 @@
 
     .customHover {
         @apply transition-all duration-100 hover:cursor-pointer shadow-slate-900 shadow-2xl rounded-xl overflow-hidden;
-      }
+    }
 }
