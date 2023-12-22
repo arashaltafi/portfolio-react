@@ -12,11 +12,11 @@ const Contact = () => {
   return (
     <div className="index-contact h-screen w-full flex justify-center items-center flex-col text-center zIndex20">
       <h1
-        className='title text-8xl'
+        className='title text-4xl md:text-6xl lg:text-7xl xl:text-8xl 2xl:text-9xl'
         style={{
           transform: `translate(${Math.round(mousePosition.x)}px, ${Math.round(mousePosition.y)}px)`
         }}>
-          Contact To Me
+        Contact To Me
       </h1>
 
     </div>
