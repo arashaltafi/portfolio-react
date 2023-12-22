@@ -1,4 +1,3 @@
-import ParticlesComponent, { ParticlesType } from "../Components/ParticlesComponent";
 import { useEffect, useState } from 'react'
 import { CustomMouseMove2 } from '../utils/CustomHoverUtils'
 
@@ -11,22 +10,18 @@ const Contact = () => {
   }, []);
 
   return (
-    <>
-      <div className="relative index-about h-screen w-full flex justify-center items-center flex-col text-center zIndex20">
-        <div className="flex justify-center items-center">
-          <h1
-            className="title text-8xl"
-            style={{
-              position: 'absolute',
-              top: `calc(40% + ${mousePosition.y}px)`,
-              left: `calc(30% + ${mousePosition.x}px)`,
-            }}>Contact To Me</h1>
-        </div>
-
+    <div className="relative index-contact h-screen w-full flex justify-center items-center flex-col text-center zIndex20">
+      <div className="flex justify-center items-center">
+        <h1
+          className="title text-8xl"
+          style={{
+            position: 'absolute',
+            top: `calc(40% + ${mousePosition.y}px)`,
+            left: `calc(30% + ${mousePosition.x}px)`,
+          }}>Contact To Me</h1>
       </div>
 
-      <ParticlesComponent particlesType={ParticlesType.Snow} />
-    </>
+    </div>
   )
 }
 

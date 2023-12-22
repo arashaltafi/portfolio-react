@@ -25,7 +25,7 @@
             url('/public/assets/background.png');
     }
 
-    .index-about {
+    .index-contact {
         @apply w-full h-screen flex items-center justify-normal flex-col bg-no-repeat overflow-hidden;
         background-position: center center !important;
         background-size: cover !important;
@@ -33,6 +33,26 @@
         background:
             linear-gradient(180deg, #00000099, #00000088, #00000077, #00000055, #00000044, #00000033, #00000022, #00000011),
             url('/public/assets/background_about.png');
+    }
+
+    .index-resume {
+        @apply w-full h-screen flex items-center justify-normal flex-col bg-no-repeat overflow-hidden;
+        background-position: center center !important;
+        background-size: cover !important;
+        background-repeat: no-repeat !important;
+        background:
+            linear-gradient(180deg, #00000099, #00000088, #00000077, #00000055, #00000044, #00000033, #00000022, #00000011),
+            url('/public/assets/background_resume.png');
+    }
+
+    .index-404 {
+        @apply w-full h-screen flex items-center justify-normal flex-col bg-no-repeat overflow-hidden;
+        background-position: center center !important;
+        background-size: cover !important;
+        background-repeat: no-repeat !important;
+        background:
+            linear-gradient(180deg, #00000099, #00000088, #00000077, #00000055, #00000044, #00000033, #00000022, #00000011),
+            url('/public/assets/background_404.png');
     }
 
     .radial-background-red {

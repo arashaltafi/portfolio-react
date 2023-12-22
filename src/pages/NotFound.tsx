@@ -17,7 +17,7 @@ const NotFound = () => {
 
     return (
         <>
-            <div className="relative index-about h-screen w-full flex justify-center items-center flex-col text-center gap-16 zIndex20">
+            <div className="relative index-404 h-screen w-full flex justify-center items-center flex-col text-center gap-16 zIndex20">
                 <div
                     className="w-64 h-52 title-withouthover"
                     style={{
