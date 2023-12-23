@@ -86,7 +86,7 @@ const Resume = () => {
         <h2 className='title text-2xl md:text-3xl lg:text-4xl xl:text-5xl 2xl:text-6xl pt-20'>{t('language_skills')}</h2>
         <div className='flex flex-col w-2/3 items-center justify-between zIndex20 mt-4 gap-12'>
           <div className='flex flex-col gap-2 self-start'>
-            <h5 className='subtitle self-start'>Persian</h5>
+            <h5 className='subtitle self-start'>{t('persian')}</h5>
             <div className='flex flex-row gap-2'>
               <FaCircle className='subtitle text-green-500 text-2xl' />
               <FaCircle className='subtitle text-green-500 text-2xl' />
@@ -96,7 +96,7 @@ const Resume = () => {
             </div>
           </div>
           <div className='flex flex-col gap-2 self-start'>
-            <h5 className='subtitle self-start'>English</h5>
+            <h5 className='subtitle self-start'>{t('english')}</h5>
             <div className='flex flex-row gap-2'>
               <FaCircle className='subtitle text-green-500 text-2xl' />
               <FaCircle className='subtitle text-green-500 text-2xl' />
