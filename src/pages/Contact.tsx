@@ -1,7 +1,19 @@
 import { useEffect, useState } from 'react'
 import { CustomMouseMove2 } from '../utils/CustomHoverUtils'
+import { useDispatch } from 'react-redux'
+import locationSlice from '../redux/locationSlice';
+import { useLocation } from 'react-router';
 
 const Contact = () => {
+  const location = useLocation();
+  const dispatch = useDispatch();
+
+  useEffect(() => {
+    dispatch(locationSlice.actions.addLocation([{
+      pathName: location.pathname,
+      isLoaded: true
+    }]));
+  }, [])
 
   //mouse move animation
   const [mousePosition, setMousePosition] = useState<{ x: number; y: number }>({ x: 0, y: 0 });

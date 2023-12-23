@@ -38,7 +38,7 @@ const CircleFollowCursor = (prop: any) => {
     return (
         <div
             id='parent'
-            className={`relative h-full w-full relative ${overFlowHidden ? 'overflow-hidden' : 'overflow-auto'}`}
+            className={`relative h-full w-full overflow-x-hidden ${overFlowHidden ? 'overflow-hidden' : 'overflow-y-auto'}`}
             onMouseMove={handleMouseMove}
             onMouseLeave={handleBeforeUnload}
         >

@@ -2,6 +2,7 @@ import React, { useEffect, useRef, useState } from 'react';
 import { Outlet, useLocation } from 'react-router';
 import ParticlesComponent, { ParticlesType } from './ParticlesComponent';
 import BounceLoader from 'react-spinners/BounceLoader'
+import { useSelector } from 'react-redux';
 
 const ScrollToTop = () => {
 
@@ -9,6 +10,7 @@ const ScrollToTop = () => {
     const mainRef = useRef<any>()
     const [prev, setPrev] = useState<string>();
     const [loading, setLoading] = useState<boolean>(false)
+    const locationSelector = useSelector((state: any) => state.location);
 
     useEffect(() => {
         let flag = true;
@@ -26,8 +28,16 @@ const ScrollToTop = () => {
             mainRef.current.scrollTo(0, 0);
         }
 
-        //TODO check if has in cache don't set it
-        setLoading(true)
+        console.log("locationSelector.locations", locationSelector.locations);
+        const locationCached = locationSelector.locations.find((lc: any) => {
+            return lc.pathName === location.pathname
+        })
+
+        if (locationCached?.isLoaded) {
+            setLoading(false)
+        } else {
+            setLoading(true)
+        }
 
         setTimeout(() => {
             setLoading(false)

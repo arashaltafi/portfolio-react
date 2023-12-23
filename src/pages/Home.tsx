@@ -1,7 +1,20 @@
+import { useEffect } from "react";
 import HomeComponent from "../Components/HomeComponent"
 import ParticlesComponent, { ParticlesType } from "../Components/ParticlesComponent"
+import { useDispatch } from "react-redux";
+import { useLocation } from "react-router";
+import locationSlice from "../redux/locationSlice";
 
 const Home = () => {
+    const location = useLocation();
+    const dispatch = useDispatch();
+  
+    useEffect(() => {
+      dispatch(locationSlice.actions.addLocation([{
+        pathName: location.pathname,
+        isLoaded: true
+      }]));
+    }, [])
 
     return (
         <>

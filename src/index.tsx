@@ -6,16 +6,20 @@ import reportWebVitals from './reportWebVitals';
 import * as serviceWorkerRegistration from './serviceWorkerRegistration';
 import { BrowserRouter } from 'react-router-dom';
 import 'tippy.js/dist/tippy.css';
+import { Provider } from 'react-redux';
+import { store } from './redux/store'
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
 );
 root.render(
-  <BrowserRouter basename='/'>
-    {/* <React.StrictMode> */}
-    <App />
-    {/* </React.StrictMode> */}
-  </BrowserRouter>
+  <Provider store={store}>
+    <BrowserRouter basename='/'>
+      {/* <React.StrictMode> */}
+      <App />
+      {/* </React.StrictMode> */}
+    </BrowserRouter>
+  </Provider>
 );
 
 //service worker registration
