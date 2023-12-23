@@ -30,7 +30,11 @@
     "phone": "تلفن",
     "email": "ایمیل",
     "address": "آدرس",
+    "age": "سن",
     "address_tehran_iran": "ایران- تهران",
     "ability_to_freelance": "توانایی کار آزاد",
-    "available_for_freelance_project": "من برای پروژه فریلنسری در دسترس هستم"
+    "available_for_freelance_project": "من برای پروژه فریلنسری در دسترس هستم",
+    "resume_description": "سلام! من آرش الطافی هستم، توسعه دهنده اندروید از تهران. با 5 سال سابقه کار فریلنسر و 2 سال سابقه کار تیمی در شرکت",
+    "freelance_ability": "توانایی فریلنسری",
+    "download_resume": "دانلود رزومه"
 }

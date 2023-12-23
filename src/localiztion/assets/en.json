@@ -30,7 +30,12 @@
     "phone": "Phone",
     "email": "Email",
     "address": "Address",
+    "age": "Age",
     "address_tehran_iran": "Tehran, Iran",
     "ability_to_freelance": "Ability To Freelance",
-    "available_for_freelance_project": "I'm Available For Freelance Project"
+    "available_for_freelance_project": "I'm Available For Freelance Project",
+    "resume_description": "Hi! I am Arash Altafi, Android Developer from Tehran. With 5 years of experience as a freelancer and 2 years of experience in team work in the company",
+    "freelance_ability": "Freelance Ability",
+    "download_resume": "Download Resume"
+
 }
