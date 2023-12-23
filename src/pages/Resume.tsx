@@ -7,6 +7,7 @@ import { useTranslation } from 'react-i18next';
 import { FaCode } from "react-icons/fa";
 import { FaGoodreads } from "react-icons/fa6";
 import { TiTick } from "react-icons/ti";
+import { FaCircle } from "react-icons/fa";
 
 const Resume = () => {
   const location = useLocation();
@@ -83,6 +84,28 @@ const Resume = () => {
 
         <span className='h-[1px] my-16 w-3/4 bg-gray-100/50'></span>
         <h2 className='title text-2xl md:text-3xl lg:text-4xl xl:text-5xl 2xl:text-6xl pt-20'>{t('language_skills')}</h2>
+        <div className='flex flex-col w-2/3 items-center justify-between zIndex20 mt-4 gap-12'>
+          <div className='flex flex-col gap-2 self-start'>
+            <h5 className='subtitle self-start'>Persian</h5>
+            <div className='flex flex-row gap-2'>
+              <FaCircle className='subtitle text-green-500 text-2xl' />
+              <FaCircle className='subtitle text-green-500 text-2xl' />
+              <FaCircle className='subtitle text-green-500 text-2xl' />
+              <FaCircle className='subtitle text-green-500 text-2xl' />
+              <FaCircle className='subtitle text-green-500 text-2xl' />
+            </div>
+          </div>
+          <div className='flex flex-col gap-2 self-start'>
+            <h5 className='subtitle self-start'>English</h5>
+            <div className='flex flex-row gap-2'>
+              <FaCircle className='subtitle text-green-500 text-2xl' />
+              <FaCircle className='subtitle text-green-500 text-2xl' />
+              <FaCircle className='subtitle text-green-500 text-2xl' />
+              <FaCircle className='subtitle text-white text-2xl' />
+              <FaCircle className='subtitle text-white text-2xl' />
+            </div>
+          </div>
+        </div>
 
 
         <span className='h-[1px] my-16 w-3/4 bg-gray-100/50'></span>
