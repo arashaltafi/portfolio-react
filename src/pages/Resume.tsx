@@ -4,6 +4,9 @@ import locationSlice from '../redux/locationSlice';
 import { useLocation } from 'react-router';
 import { useDispatch } from 'react-redux';
 import { useTranslation } from 'react-i18next';
+import { FaCode } from "react-icons/fa";
+import { FaGoodreads } from "react-icons/fa6";
+import { TiTick } from "react-icons/ti";
 
 const Resume = () => {
   const location = useLocation();
@@ -27,11 +30,11 @@ const Resume = () => {
     e.preventDefault();
     window.open("https://arashaltafi.ir/resume_en.pdf");
   }
-  
-//customHover
-useEffect(() => {
-  CustomHoverAnimation('.customHover')
-}, [])
+
+  //customHover
+  useEffect(() => {
+    CustomHoverAnimation('.customHover')
+  }, [])
 
   return (
     <>
@@ -47,9 +50,10 @@ useEffect(() => {
 
       <div className='h-full w-full bg-zinc-900 flex flex-col gap-20 items-center justify-center pt-6 md:pt-12 pb-12 md:pb-64 zIndex20'>
         <h2 className='title text-2xl md:text-3xl lg:text-4xl xl:text-5xl 2xl:text-6xl pt-20'>{t('resume')}</h2>
+
         <div className='flex flex-row w-2/3 items-center justify-center gap-8 zIndex20'>
           <div className='flex flex-col items-center justify-center gap-16'>
-        <p className='subtitle'>{t('resume_description')}</p>
+            <p className='subtitle'>{t('resume_description')}</p>
             <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 grid-rows-3 lg:grid-rows-2 gap-16'>
               <p className='subtitle'><span className='title-withouthover text-green-500'>{t('age')}:</span> 26</p>
               <p className='subtitle'><span className='title-withouthover text-green-500'>{t('address')}:</span> Tehran, Iran</p>
@@ -61,6 +65,47 @@ useEffect(() => {
           </div>
           <img className='hidden md:block w-56 md:w-64 lg:w-80 rounded-lg customHover' src="/assets/arash2.jpg" alt="arash altafi" />
         </div>
+
+        <span className='h-[1px] my-16 w-3/4 bg-gray-100/50'></span>
+        <h2 className='title text-2xl md:text-3xl lg:text-4xl xl:text-5xl 2xl:text-6xl pt-20'>{t('services')}</h2>
+        <div className='flex flex-row w-2/3 items-center justify-between gap-8 zIndex20 mt-4'>
+          <div className='flex flex-col items-center justify-center gap-6'>
+            <FaCode className='subtitle text-green-500 text-5xl' />
+            <h4 className='title'>Advertising</h4>
+            <p className='subtitle font-normal'>Advertising services on mobile phones with notifications</p>
+          </div>
+          <div className='flex flex-col items-center justify-center gap-6'>
+            <FaGoodreads className='subtitle text-green-500 text-5xl' />
+            <h4 className='title'>Application Development</h4>
+            <p className='subtitle font-normal'>Release of Android applications in different markets</p>
+          </div>
+        </div>
+
+        <span className='h-[1px] my-16 w-3/4 bg-gray-100/50'></span>
+        <h2 className='title text-2xl md:text-3xl lg:text-4xl xl:text-5xl 2xl:text-6xl pt-20'>{t('language_skills')}</h2>
+
+
+        <span className='h-[1px] my-16 w-3/4 bg-gray-100/50'></span>
+        <h2 className='title text-2xl md:text-3xl lg:text-4xl xl:text-5xl 2xl:text-6xl pt-20'>{t('knowledge')}</h2>
+        <div className='w-1/2 grid grid-cols-2 gap-16 items-center justify-center zIndex20'>
+          <div className='flex flex-row items-center justify-center'>
+            <TiTick className='subtitle text-green-500 text-5xl' />
+            <h6 className='subtitle'>{t('computer_technician')}</h6>
+          </div>
+          <div className='flex flex-row items-center justify-center'>
+            <TiTick className='subtitle text-green-500 text-5xl' />
+            <h6 className='subtitle'>{t('android_application')}</h6>
+          </div>
+          <div className='flex flex-row items-center justify-center'>
+            <TiTick className='subtitle text-green-500 text-5xl' />
+            <h6 className='subtitle'>{t('advertising_services')}</h6>
+          </div>
+        </div>
+
+        <span className='h-[1px] my-16 w-3/4 bg-gray-100/50'></span>
+        <h2 className='title text-2xl md:text-3xl lg:text-4xl xl:text-5xl 2xl:text-6xl pt-20'>{t('about_me')}</h2>
+        <p className='subtitle font-normal'>{t('about_description')}</p>
+
       </div>
 
     </>

@@ -36,5 +36,13 @@
     "available_for_freelance_project": "من برای پروژه فریلنسری در دسترس هستم",
     "resume_description": "سلام! من آرش الطافی هستم، توسعه دهنده اندروید از تهران. با 5 سال سابقه کار فریلنسر و 2 سال سابقه کار تیمی در شرکت",
     "freelance_ability": "توانایی فریلنسری",
-    "download_resume": "دانلود رزومه"
+    "download_resume": "دانلود رزومه",
+    "services": "سرویس ها",
+    "language_skills": "توانایی های زبانی",
+    "knowledge": "دانش",
+    "about_me": "درباره من",
+    "about_description": "فارغ التحصیل مهندسی نرم افزار کامپیوتر و علاقه مند به برنامه نویسی اندروید و وب",
+    "computer_technician": "تکنسین کامپیوتر",
+    "android_application": "اپلیکیشن اندروید",
+    "advertising_services": "خدمات تبلیغاتی"
 }
