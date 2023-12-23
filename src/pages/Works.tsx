@@ -3,10 +3,12 @@ import { CustomMouseMove2 } from '../utils/CustomHoverUtils'
 import { useLocation } from 'react-router';
 import { useDispatch } from 'react-redux';
 import locationSlice from '../redux/locationSlice';
+import { useTranslation } from 'react-i18next';
 
 const Works = () => {
   const location = useLocation();
   const dispatch = useDispatch();
+  const { t } = useTranslation();
 
   useEffect(() => {
     dispatch(locationSlice.actions.addLocation([{
@@ -28,7 +30,7 @@ const Works = () => {
         style={{
           transform: `translate(${Math.round(mousePosition.x)}px, ${Math.round(mousePosition.y)}px)`
         }}>
-        Works
+        {t('works')}
       </h1>
 
     </div>
