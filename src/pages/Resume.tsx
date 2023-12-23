@@ -112,56 +112,74 @@ const Resume = () => {
         <h2 className='title text-2xl md:text-3xl lg:text-4xl xl:text-5xl 2xl:text-6xl pt-20'>{t('programming_skills')}</h2>
         <div className='flex flex-row flex-wrap w-full md:w-1/3 items-center justify-between zIndex20 mt-4 gap-8'>
           <div className='flex flex-col justify-center items-center gap-4'>
-            <span className='flex items-center justify-center w-28 h-28 rounded-full border border-solid border-green-500'>
-              <p className='subtitle'>90%</p>
+            <span className='progressBar-90'>
+              <span className='progressBar2'>
+                <p className='subtitle'>90%</p>
+              </span>
             </span>
             <p className='subtitle'>KOTLIN</p>
           </div>
           <div className='flex flex-col justify-center items-center gap-4'>
-            <span className='flex items-center justify-center w-28 h-28 rounded-full border border-solid border-green-500'>
-              <p className='subtitle'>80%</p>
+            <span className='progressBar-80'>
+              <span className='progressBar2'>
+                <p className='subtitle'>80%</p>
+              </span>
             </span>
             <p className='subtitle'>JAVA</p>
           </div>
           <div className='flex flex-col justify-center items-center gap-4'>
-            <span className='flex items-center justify-center w-28 h-28 rounded-full border border-solid border-green-500'>
-              <p className='subtitle'>70%</p>
+            <span className='progressBar-70'>
+              <span className='progressBar2'>
+                <p className='subtitle'>70%</p>
+              </span>
             </span>
             <p className='subtitle'>PHP</p>
           </div>
           <div className='flex flex-col justify-center items-center gap-4'>
-            <span className='flex items-center justify-center w-28 h-28 rounded-full border border-solid border-green-500'>
-              <p className='subtitle'>90%</p>
+            <span className='progressBar-90'>
+              <span className='progressBar2'>
+                <p className='subtitle'>90%</p>
+              </span>
             </span>
             <p className='subtitle'>MYSQL</p>
           </div>
           <div className='flex flex-col justify-center items-center gap-4'>
-            <span className='flex items-center justify-center w-28 h-28 rounded-full border border-solid border-green-500'>
-              <p className='subtitle'>70%</p>
+            <span className='progressBar-70'>
+              <span className='progressBar2'>
+                <p className='subtitle'>70%</p>
+              </span>
             </span>
             <p className='subtitle'>MONGO</p>
           </div>
           <div className='flex flex-col justify-center items-center gap-4'>
-            <span className='flex items-center justify-center w-28 h-28 rounded-full border border-solid border-green-500'>
-              <p className='subtitle'>90%</p>
+            <span className='progressBar-90'>
+              <span className='progressBar2'>
+                <p className='subtitle'>90%</p>
+              </span>
             </span>
             <p className='subtitle'>JS</p>
           </div>
           <div className='flex flex-col justify-center items-center gap-4'>
-            <span className='flex items-center justify-center w-28 h-28 rounded-full border border-solid border-green-500'>
-              <p className='subtitle'>90%</p>
+            <span className='progressBar-90'>
+              <span className='progressBar2'>
+                <p className='subtitle'>90%</p>
+              </span>
             </span>
             <p className='subtitle'>REACT</p>
           </div>
           <div className='flex flex-col justify-center items-center gap-4'>
-            <span className='flex items-center justify-center w-28 h-28 rounded-full border border-solid border-green-500'>
-              <p className='subtitle'>80%</p>
+            <span className='progressBar-80'>
+              <span className='progressBar2'>
+                <p className='subtitle'>80%</p>
+              </span>
             </span>
             <p className='subtitle'>NODE JS</p>
           </div>
           <div className='flex flex-col justify-center items-center gap-4'>
-            <span className='flex items-center justify-center w-28 h-28 rounded-full border border-solid border-green-500'>
-              <p className='subtitle'>80%</p>
+            <span className='progressBar-80'>
+              <span className='progressBar2'>
+                <p className='subtitle'>80%</p>
+              </span>
             </span>
             <p className='subtitle'>EXPRESS JS</p>
           </div>

@@ -8,6 +8,9 @@ module.exports = {
       backgroundImage: {
         "home-mobile": "url(/tailwindcss/sample5/images/headerBgMobile.webp)",
         "home-desktop": "url(/tailwindcss/sample5/images/headerBgDesktop.webp)",
+      },
+      spacing: {
+        '26': '6.5rem',
       }
     },
   },
