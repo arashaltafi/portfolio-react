@@ -38,28 +38,28 @@ const Contact = () => {
           {t('contactToMe')}
         </h1>
       </div>
-      <div className='h-full w-full bg-zinc-900 flex flex-col gap-20 items-center justify-center pt-12 pb-48 zIndex20'>
-        <h2 className='title text-lg md:text-xl lg:text-2xl xl:text-3xl 2xl:text-4xl pt-20'>{t('contact')}</h2>
-        <div className='w-full grid grid-cols-2 gap-y-40'>
-          <div className='flex items-center justify-center flex-col gap-4'>
+      <div className='h-full w-full bg-zinc-900 flex flex-col gap-20 items-center justify-center pt-6 md:pt-12 pb-12 md:pb-64 zIndex20'>
+        <h2 className='title text-2xl md:text-3xl lg:text-4xl xl:text-5xl 2xl:text-6xl pt-20'>{t('contact')}</h2>
+        <div className='md:w-full grid grid-cols-2 gap-y-16 md:gap-y-20 lg:gap-y-40'>
+          <div className='flex items-center justify-center flex-col md:gap-4'>
             <FaPhone className='subtitle text-green-500 text-5xl' />
-            <p className='title mt-4'>Phone</p>
-            <p className='subtitle'>+98 918 767 7641</p>
+            <p className='subtitle md:title mt-4'>{t('phone')}</p>
+            <p className='subtitle text-[8px] md:text-xs'>+98 918 767 7641</p>
           </div>
-          <div className='flex items-center justify-center flex-col gap-4'>
+          <div className='flex items-center justify-center flex-col md:gap-4'>
             <MdEmail className='subtitle text-green-500 text-5xl' />
-            <p className='title mt-4'>Email</p>
-            <p className='subtitle'>arashaltafi1377@gmail.com</p>
+            <p className='subtitle md:title mt-4'>{t('email')}</p>
+            <p className='subtitle text-[8px] md:text-xs'>arashaltafi1377@gmail.com</p>
           </div>
-          <div className='flex items-center justify-center flex-col gap-4'>
+          <div className='flex items-center justify-center flex-col md:gap-4'>
             <ImLocation2 className='subtitle text-green-500 text-5xl' />
-            <p className='title mt-4'>Address</p>
-            <p className='subtitle'>Tehran, Iran</p>
+            <p className='subtitle md:title mt-4'>{t('address')}</p>
+            <p className='subtitle text-[8px] md:text-xs'>{t('address_tehran_iran')}</p>
           </div>
-          <div className='flex items-center justify-center flex-col gap-4'>
+          <div className='flex items-center justify-center flex-col md:gap-4'>
             <IoPersonSharp className='subtitle text-green-500 text-5xl' />
-            <p className='title mt-4'>Ability To Freelance</p>
-            <p className='subtitle'>I'm Available For Freelance Project</p>
+            <p className='subtitle md:title mt-4'>{t('ability_to_freelance')}</p>
+            <p className='subtitle text-[8px] md:text-xs'>{t('available_for_freelance_project')}</p>
           </div>
         </div>
       </div>

@@ -21,10 +21,16 @@
     "resume": "Resume",
     "works": "Works",
     "contact": "Contact",
-    "email": "E",
+    "e": "E",
     "tel": "T",
     "follow_me": "Follow Me",
     "see_resume": "See Resume PDF",
     "change_language": "Change Language",
-    "contactToMe": "Contact To Me"
+    "contactToMe": "Contact To Me",
+    "phone": "Phone",
+    "email": "Email",
+    "address": "Address",
+    "address_tehran_iran": "Tehran, Iran",
+    "ability_to_freelance": "Ability To Freelance",
+    "available_for_freelance_project": "I'm Available For Freelance Project"
 }
