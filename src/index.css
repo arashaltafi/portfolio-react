@@ -123,6 +123,11 @@
         @apply p-3 bg-zinc-800 text-white text-xl font-bold transition duration-100 border-2 border-solid border-green-500 hover:text-white hover:bg-green-500 rounded-lg shadow-2xl shadow-white cursor-pointer
     }
 
+    .btnHoverWorks {
+        @apply p-4 bg-yellow-500 text-white text-2xl font-bold transition duration-100 hover:text-yellow-500 hover:bg-white rounded-2xl shadow-xl cursor-pointer;
+        box-shadow: 1px 1px 5px white;
+    }
+
     .custom-animation {
         animation: translateAndBack 0.5s ease-in-out infinite alternate;
     }
