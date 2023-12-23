@@ -1,5 +1,5 @@
-import { Routes, Route, Link } from 'react-router-dom';
-import { useEffect, useRef } from "react";
+import { Routes, Route, Link, useLocation } from 'react-router-dom';
+import { useEffect, useRef, useState } from "react";
 import tippy from 'tippy.js';
 import ScrollToTop from "./Components/ScrollToTop";
 import Home from "./pages/Home";
@@ -29,6 +29,7 @@ enum LinkType {
 
 function App() {
   const { t, i18n } = useTranslation();
+  const location = useLocation();
 
   const handleClickLink = (linkType: LinkType) => {
     switch (linkType) {
@@ -105,6 +106,40 @@ function App() {
     i18n.changeLanguage(localStorage.getItem('lang') || 'en');
   }, [])
 
+  const [isInHome, setIsInHome] = useState<boolean>()
+  const [isInContactHome, setIsInContactHome] = useState<boolean>()
+  const [isInResumeHome, setIsInResumeHome] = useState<boolean>()
+  const [isInWorksHome, setIsInWorksHome] = useState<boolean>()
+
+  useEffect(() => {
+    clearOtherPath()
+
+    switch (location.pathname) {
+      case '/':
+        setIsInHome(true)
+        break;
+      case '/resume':
+        setIsInResumeHome(true)
+        break;
+      case '/works':
+        setIsInWorksHome(true)
+        break;
+      case '/contact':
+        setIsInContactHome(true)
+        break;
+      default:
+        setIsInHome(true)
+        break;
+    }
+  }, [location])
+
+  const clearOtherPath = () => {
+    setIsInHome(false)
+    setIsInResumeHome(false)
+    setIsInWorksHome(false)
+    setIsInContactHome(false)
+  }
+
   return (
     <div className='relative select-none'>
       <CircleFollowCursor>
@@ -120,12 +155,12 @@ function App() {
       </CircleFollowCursor>
 
       <nav className='fixed top-0 left-0 right-0 w-full flex flex-row items-stretch justify-between py-6 px-12 lg:py-8 lg:px-16 zIndex20'>
-        <div className="hidden sm:flex flex-row gap-x-8 items-center justify-center child:title">
+        <div className="hidden sm:flex flex-row gap-x-8 items-center justify-center">
           <GrLanguage id="change-language" className="title hover:transition hover:duration-100 hover:delay-100" onClick={changeLang} />
-          <Link className="hover:custom-animation hover:transition hover:duration-100 hover:delay-100 py-8 px-4" to="/contact">{t('contact')}</Link>
-          <Link className="hover:custom-animation hover:transition hover:duration-100 hover:delay-100 py-8 px-4" to="/works">{t('works')}</Link>
-          <Link className="hover:custom-animation hover:transition hover:duration-100 hover:delay-100 py-8 px-4" to="/resume">{t('resume')}</Link>
-          <Link className="hover:custom-animation hover:transition hover:duration-100 hover:delay-100 py-8 px-4" to="/">{t('home')}</Link>
+          <Link className={`title hover:custom-animation hover:transition hover:duration-100 hover:delay-100 py-8 px-4 ${isInContactHome && 'text-yellow-300'}`} to="/contact">{t('contact')}</Link>
+          <Link className={`title hover:custom-animation hover:transition hover:duration-100 hover:delay-100 py-8 px-4 ${isInWorksHome && 'text-yellow-300'}`} to="/works">{t('works')}</Link>
+          <Link className={`title hover:custom-animation hover:transition hover:duration-100 hover:delay-100 py-8 px-4 ${isInResumeHome && 'text-yellow-300'}`} to="/resume">{t('resume')}</Link>
+          <Link className={`title hover:custom-animation hover:transition hover:duration-100 hover:delay-100 py-8 px-4 ${isInHome && 'text-yellow-300'}`} to="/">{t('home')}</Link>
         </div>
         <div id="arashaltafi" className="flex flex-row gap-x-8 items-center justify-center child:title" onMouseEnter={changeArashTheme} onMouseLeave={changeArashTheme} onClick={(e) => handleClickPdf(e)}>
           <div className="hover:custom-animation-rotate hover:transition hover:duration-100 hover:delay-100 py-8 px-4">

@@ -25,7 +25,7 @@ const Resume = () => {
 
   return (
     <>
-      <div className="index-contact h-screen w-full flex justify-center items-center flex-col text-center zIndex20">
+      <div className="index-resume h-screen w-full flex justify-center items-center flex-col text-center zIndex20">
         <h1
           className='title text-4xl md:text-6xl lg:text-7xl xl:text-8xl 2xl:text-9xl'
           style={{
