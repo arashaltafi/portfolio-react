@@ -29,7 +29,7 @@ const Contact = () => {
 
   return (
     <>
-      <div className="index-contact h-screen w-full flex justify-center items-center flex-col text-center zIndex20">
+      <div className="index-contact h-screen w-full flex justify-center items-center flex-col text-center zIndex30">
         <h1
           className='title text-4xl md:text-6xl lg:text-7xl xl:text-8xl 2xl:text-9xl'
           style={{
@@ -38,9 +38,9 @@ const Contact = () => {
           {t('contactToMe')}
         </h1>
       </div>
-      <div className='h-full w-full bg-zinc-900 flex flex-col gap-20 items-center justify-center pt-6 md:pt-12 pb-12 md:pb-64 zIndex20'>
+      <div className='h-full w-full bg-zinc-900 flex flex-col gap-20 items-center justify-center pt-6 md:pt-12 pb-12 md:pb-64'>
         <h2 className='title text-2xl md:text-3xl lg:text-4xl xl:text-5xl 2xl:text-6xl pt-20'>{t('contact')}</h2>
-        <div className='md:w-full grid grid-cols-2 gap-y-16 md:gap-y-20 lg:gap-y-40'>
+        <div className='md:w-full grid grid-cols-2 gap-y-16 md:gap-y-20 lg:gap-y-40 zIndex20'>
           <div className='flex items-center justify-center flex-col md:gap-4'>
             <FaPhone className='subtitle text-green-500 text-5xl' />
             <p className='subtitle md:title mt-4'>{t('phone')}</p>
