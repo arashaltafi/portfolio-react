@@ -38,7 +38,7 @@ const CircleFollowCursor = (prop: any) => {
     return (
         <div
             id='parent'
-            className={`h-full w-full relative ${overFlowHidden ? 'overflow-hidden' : 'overflow-auto'}`}
+            className={`relative h-full w-full relative ${overFlowHidden ? 'overflow-hidden' : 'overflow-auto'}`}
             onMouseMove={handleMouseMove}
             onMouseLeave={handleBeforeUnload}
         >
@@ -53,7 +53,7 @@ const CircleFollowCursor = (prop: any) => {
                             }}
                         />
                         <div
-                            className='absolute w-48 h-48 rounded-full -translate-x-1/2 -translate-y-1/2 opacity-50 radial-background-green zIndex10'
+                            className='fixed w-48 h-48 rounded-full -translate-x-1/2 -translate-y-1/2 opacity-50 radial-background-green zIndex10'
                             style={{
                                 top: position.y,
                                 left: position.x,
@@ -62,7 +62,11 @@ const CircleFollowCursor = (prop: any) => {
                     </>
             }
             {prop.children}
-        </div >
+
+            <span className='hidden sm:block absolute left-1/4 top-0 h-screen w-[1px] bg-[#F5F5F522] blink-animation' />
+            <span className='hidden md:block absolute left-2/4 top-0 h-screen w-[1px] bg-[#F5F5F522] blink-animation' />
+            <span className='hidden sm:block absolute left-3/4 top-0 h-screen w-[1px] bg-[#F5F5F522] blink-animation' />
+        </div>
     );
 };
 

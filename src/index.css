@@ -145,6 +145,28 @@
         }
     }
 
+    .blink-animation {
+        animation: blink 2s ease 0.5s infinite alternate;
+    }
+
+    @keyframes blink {
+        0% {
+            opacity: 0;
+        }
+
+        20% {
+            opacity: 10;
+        }
+
+        50% {
+            opacity: 20;
+        }
+
+        100% {
+            opacity: 30;
+        }
+    }
+
     .customHover {
         @apply transition-all duration-100 hover:cursor-pointer shadow-slate-900 shadow-2xl rounded-xl overflow-hidden;
     }
