@@ -78,7 +78,7 @@ const Works = () => {
         <h2 className='title text-xl md:text-2xl lg:text-3xl xl:text-4xl 2xl:text-5xl pt-8'>{t('applications')}</h2>
         <div className='flex flex-col w-full md:w-2/3 items-center justify-between zIndex20 mt-4 gap-8'>
           <div className='flex flex-col justify-center items-center'>
-            <img className='w-2/3 cursor-pointer dropShadowRed' src="https://arashaltafi.ir/images//mrEnglish/0.png" alt="mrEnglish" />
+            <img className='w-2/3 cursor-pointer dropShadowRed hover:scale-105 transition' src="https://arashaltafi.ir/images//mrEnglish/0.png" alt="mrEnglish" />
             <div className='flex flex-row items-center justify-around gap-16'>
               <p className='title'>See In Market</p>
               <p className='title'>Gallery</p>
@@ -88,7 +88,7 @@ const Works = () => {
 
           <span className='h-[1px] my-16 w-2/3 bg-gray-100/20'></span>
           <div className='flex flex-col justify-center items-center'>
-            <img className='w-2/3 cursor-pointer dropShadowPurple' src="https://arashaltafi.ir/images/tvOnline/0.png" alt="tvOnline" />
+            <img className='w-2/3 cursor-pointer dropShadowPurple hover:scale-105 transition' src="https://arashaltafi.ir/images/tvOnline/0.png" alt="tvOnline" />
             <div className='flex flex-row items-center justify-around gap-16'>
               <p className='title'>See In Market</p>
               <p className='title'>Gallery</p>
@@ -98,7 +98,7 @@ const Works = () => {
 
           <span className='h-[1px] my-16 w-2/3 bg-gray-100/20'></span>
           <div className='flex flex-col justify-center items-center'>
-            <img className='w-2/3 cursor-pointer dropShadowWhite' src="https://arashaltafi.ir/images/speedMeter/0.png" alt="speedMeter" />
+            <img className='w-2/3 cursor-pointer dropShadowWhite hover:scale-105 transition' src="https://arashaltafi.ir/images/speedMeter/0.png" alt="speedMeter" />
             <div className='flex flex-row items-center justify-around gap-16'>
               <p className='title'>See In Market</p>
               <p className='title'>Gallery</p>
@@ -108,7 +108,7 @@ const Works = () => {
 
           <span className='h-[1px] my-16 w-2/3 bg-gray-100/20'></span>
           <div className='flex flex-col justify-center items-center'>
-            <img className='w-2/3 cursor-pointer dropShadowBlue' src="https://arashaltafi.ir/images/workout/0.png" alt="workout" />
+            <img className='w-2/3 cursor-pointer dropShadowBlue hover:scale-105 transition' src="https://arashaltafi.ir/images/workout/0.png" alt="workout" />
             <div className='flex flex-row items-center justify-around gap-16'>
               <p className='title'>See In Market</p>
               <p className='title'>Gallery</p>
@@ -118,7 +118,7 @@ const Works = () => {
 
           <span className='h-[1px] my-16 w-2/3 bg-gray-100/20'></span>
           <div className='flex flex-col justify-center items-center'>
-            <img className='w-2/3 cursor-pointer dropShadowPurple' src="https://arashaltafi.ir/images/meditation/icon.png" alt="meditation" />
+            <img className='w-2/3 cursor-pointer dropShadowPurple hover:scale-105 transition' src="https://arashaltafi.ir/images/meditation/icon.png" alt="meditation" />
             <div className='flex flex-row items-center justify-around gap-16'>
               <p className='title'>See In Market</p>
               <p className='title'>Gallery</p>
@@ -128,7 +128,7 @@ const Works = () => {
 
           <span className='h-[1px] my-16 w-2/3 bg-gray-100/20'></span>
           <div className='flex flex-col justify-center items-center'>
-            <img className='w-2/3 cursor-pointer dropShadowWhite' src="https://arashaltafi.ir/images/be_vaght_film/be_vaght_film_main2.png" alt="Video" />
+            <img className='w-2/3 cursor-pointer dropShadowWhite hover:scale-105 transition' src="https://arashaltafi.ir/images/be_vaght_film/be_vaght_film_main2.png" alt="Video" />
             <div className='flex flex-row items-center justify-around gap-16'>
               <p className='title'>See In Market</p>
               <p className='title'>Gallery</p>
@@ -137,7 +137,7 @@ const Works = () => {
 
           <span className='h-[1px] my-16 w-2/3 bg-gray-100/20'></span>
           <div className='flex flex-col justify-center items-center'>
-            <img className='w-2/3 cursor-pointer dropShadowPurple' src="https://arashaltafi.ir/images/neshan/0.png" alt="neshan" />
+            <img className='w-2/3 cursor-pointer dropShadowPurple hover:scale-105 transition' src="https://arashaltafi.ir/images/neshan/0.png" alt="neshan" />
             <div className='flex flex-row items-center justify-around gap-16'>
               <p className='title'>See In Market</p>
               <p className='title'>Gallery</p>
@@ -146,8 +146,8 @@ const Works = () => {
 
 
           <span className='h-[1px] my-16 w-2/3 bg-gray-100/20'></span>
-          <div className='flex flex-col justify-center items-center'>
-            <img className='w-2/3 cursor-pointer dropShadowRed' src="https://arashaltafi.ir/images/chatGpt/0.png" alt="chatGpt" />
+          <div className='flex flex-col justify-center items-center gap-12'>
+            <img className='w-2/3 cursor-pointer dropShadowRed hover:scale-105 transition' src="https://arashaltafi.ir/images/chatGpt/0.png" alt="chatGpt" />
             <div className='flex flex-row items-center justify-around gap-16'>
               <p className='title'>See In Market</p>
               <p className='title'>Gallery</p>
@@ -156,18 +156,8 @@ const Works = () => {
 
 
           <span className='h-[1px] my-16 w-2/3 bg-gray-100/20'></span>
-          <div className='flex flex-col justify-center items-center'>
-            <img className='w-2/3 cursor-pointer dropShadowBlue' src="https://arashaltafi.ir/images/documentBage/0.png" alt="documentBage" />
-            <div className='flex flex-row items-center justify-around gap-16'>
-              <p className='title'>See In Market</p>
-              <p className='title'>Gallery</p>
-            </div>
-          </div>
-
-
-          <span className='h-[1px] my-16 w-2/3 bg-gray-100/20'></span>
-          <div className='flex flex-col justify-center items-center'>
-            <img className='w-2/3 cursor-pointer dropShadowWhite' src="https://arashaltafi.ir/images/driving/0.png" alt="driving" />
+          <div className='flex flex-col justify-center items-center gap-12'>
+            <img className='w-2/3 cursor-pointer dropShadowBlue hover:scale-105 transition' src="https://arashaltafi.ir/images/documentBage/0.png" alt="documentBage" />
             <div className='flex flex-row items-center justify-around gap-16'>
               <p className='title'>See In Market</p>
               <p className='title'>Gallery</p>
@@ -177,7 +167,7 @@ const Works = () => {
 
           <span className='h-[1px] my-16 w-2/3 bg-gray-100/20'></span>
           <div className='flex flex-col justify-center items-center'>
-            <img className='w-2/3 cursor-pointer dropShadowRed' src="https://arashaltafi.ir/images/bmi/0.png" alt="bmi" />
+            <img className='w-2/3 cursor-pointer dropShadowWhite hover:scale-105 transition' src="https://arashaltafi.ir/images/driving/0.png" alt="driving" />
             <div className='flex flex-row items-center justify-around gap-16'>
               <p className='title'>See In Market</p>
               <p className='title'>Gallery</p>
@@ -187,7 +177,7 @@ const Works = () => {
 
           <span className='h-[1px] my-16 w-2/3 bg-gray-100/20'></span>
           <div className='flex flex-col justify-center items-center'>
-            <img className='w-2/3 cursor-pointer dropShadowGreen' src="https://arashaltafi.ir/images/joke/joke_main.png" alt="joke" />
+            <img className='w-2/3 cursor-pointer dropShadowRed hover:scale-105 transition' src="https://arashaltafi.ir/images/bmi/0.png" alt="bmi" />
             <div className='flex flex-row items-center justify-around gap-16'>
               <p className='title'>See In Market</p>
               <p className='title'>Gallery</p>
@@ -197,7 +187,7 @@ const Works = () => {
 
           <span className='h-[1px] my-16 w-2/3 bg-gray-100/20'></span>
           <div className='flex flex-col justify-center items-center'>
-            <img className='w-2/3 cursor-pointer dropShadowPurple' src="https://arashaltafi.ir/images/salavat_shomar/salavat_main.png" alt="salavat shomar" />
+            <img className='w-2/3 cursor-pointer dropShadowGreen hover:scale-105 transition' src="https://arashaltafi.ir/images/joke/joke_main.png" alt="joke" />
             <div className='flex flex-row items-center justify-around gap-16'>
               <p className='title'>See In Market</p>
               <p className='title'>Gallery</p>
@@ -207,7 +197,7 @@ const Works = () => {
 
           <span className='h-[1px] my-16 w-2/3 bg-gray-100/20'></span>
           <div className='flex flex-col justify-center items-center'>
-            <img className='w-2/3 cursor-pointer dropShadowRed' src="https://arashaltafi.ir/images/shop2/shop_main.png" alt="shop" />
+            <img className='w-2/3 cursor-pointer dropShadowPurple hover:scale-105 transition' src="https://arashaltafi.ir/images/salavat_shomar/salavat_main.png" alt="salavat shomar" />
             <div className='flex flex-row items-center justify-around gap-16'>
               <p className='title'>See In Market</p>
               <p className='title'>Gallery</p>
@@ -217,7 +207,7 @@ const Works = () => {
 
           <span className='h-[1px] my-16 w-2/3 bg-gray-100/20'></span>
           <div className='flex flex-col justify-center items-center'>
-            <img className='w-2/3 cursor-pointer dropShadowBlue' src="https://arashaltafi.ir/images/WhatsAppDownloader/whatsappdownloader_main.png" alt="WhatsAppDownloader" />
+            <img className='w-2/3 cursor-pointer dropShadowRed hover:scale-105 transition' src="https://arashaltafi.ir/images/shop2/shop_main.png" alt="shop" />
             <div className='flex flex-row items-center justify-around gap-16'>
               <p className='title'>See In Market</p>
               <p className='title'>Gallery</p>
@@ -227,7 +217,17 @@ const Works = () => {
 
           <span className='h-[1px] my-16 w-2/3 bg-gray-100/20'></span>
           <div className='flex flex-col justify-center items-center'>
-            <img className='w-2/3 cursor-pointer dropShadowGreen' src="https://arashaltafi.ir/images/calculator/icon.png" alt="calculator" />
+            <img className='w-2/3 cursor-pointer dropShadowBlue hover:scale-105 transition' src="https://arashaltafi.ir/images/WhatsAppDownloader/whatsappdownloader_main.png" alt="WhatsAppDownloader" />
+            <div className='flex flex-row items-center justify-around gap-16'>
+              <p className='title'>See In Market</p>
+              <p className='title'>Gallery</p>
+            </div>
+          </div>
+
+
+          <span className='h-[1px] my-16 w-2/3 bg-gray-100/20'></span>
+          <div className='flex flex-col justify-center items-center'>
+            <img className='w-2/3 cursor-pointer dropShadowGreen hover:scale-105 transition' src="https://arashaltafi.ir/images/calculator/icon.png" alt="calculator" />
             <div className='flex flex-row items-center justify-around gap-16'>
               <p className='title'>See In Market</p>
               <p className='title'>Gallery</p>
@@ -238,7 +238,7 @@ const Works = () => {
 
           <span className='h-[1px] my-16 w-2/3 bg-gray-100/20'></span>
           <div className='flex flex-col justify-center items-center'>
-            <img className='w-2/3 cursor-pointer dropShadowWhite' src="https://arashaltafi.ir/images/shop1/shop_main.png" alt="shop" />
+            <img className='w-2/3 cursor-pointer dropShadowWhite hover:scale-105 transition' src="https://arashaltafi.ir/images/shop1/shop_main.png" alt="shop" />
             <div className='flex flex-row items-center justify-around gap-16'>
               <p className='title'>See In Market</p>
               <p className='title'>Gallery</p>
@@ -248,7 +248,7 @@ const Works = () => {
 
           <span className='h-[1px] my-16 w-2/3 bg-gray-100/20'></span>
           <div className='flex flex-col justify-center items-center'>
-            <img className='w-2/3 cursor-pointer dropShadowRed' src="https://arashaltafi.ir/images/videoToGif/0.png" alt="videoToGif" />
+            <img className='w-2/3 cursor-pointer dropShadowRed hover:scale-105 transition' src="https://arashaltafi.ir/images/videoToGif/0.png" alt="videoToGif" />
             <div className='flex flex-row items-center justify-around gap-16'>
               <p className='title'>See In Market</p>
               <p className='title'>Gallery</p>
