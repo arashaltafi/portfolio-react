@@ -46,7 +46,7 @@ const CircleFollowCursor = (prop: any) => {
                 position.x === 0 && position.y === 0 ? null :
                     <>
                         <div
-                            className='absolute w-96 h-96 rounded-full -translate-x-1/2 -translate-y-1/2 opacity-50 radial-background-red zIndex10'
+                            className='fixed w-96 h-96 rounded-full -translate-x-1/2 -translate-y-1/2 opacity-50 radial-background-red zIndex10'
                             style={{
                                 top: position.y,
                                 left: position.x,
