@@ -6,6 +6,27 @@ import locationSlice from '../redux/locationSlice';
 import { useTranslation } from 'react-i18next';
 import Typewriter from 'typewriter-effect';
 
+enum AppMarket {
+  mrEnglish,
+  tvOnline,
+  speedMeter,
+  workout,
+  meditation,
+  video,
+  neshan,
+  chatGpt,
+  documentBage,
+  driving,
+  bmi,
+  joke,
+  salavatShomar,
+  shop1,
+  shop2,
+  WhatsAppDownloader,
+  calculator,
+  videoToGif
+}
+
 const Works = () => {
   const location = useLocation();
   const dispatch = useDispatch();
@@ -37,6 +58,67 @@ const Works = () => {
   const thirdSentence = `
       <strong><span style="color: #AB47BC; ${customStyle} #8E24AA;">${t('kotlin')}</span><span style="color: #fff; ${customStyle} #fff;"> ${t('and')} </span><span style="color: #03A9F4; ${customStyle} #0277BD;">${t('react')}</span></strong>
   `;
+
+  const handleOpenMarket = (app: AppMarket) => {
+    switch (app) {
+      case AppMarket.mrEnglish:
+        window.open('https://myket.ir/app/com.arash.altafi.englishteacher')
+        break;
+      case AppMarket.tvOnline:
+        window.open('https://arashaltafi.ir/new_app/tv_online.apk')
+        break;
+      case AppMarket.speedMeter:
+        window.open('https://cafebazaar.ir/app/com.arash.altafi.speedometer')
+        break;
+      case AppMarket.workout:
+        window.open('https://cafebazaar.ir/app/com.arash.altafi.sport')
+        break;
+      case AppMarket.meditation:
+        window.open('https://cafebazaar.ir/app/com.arash.altafi.meditation')
+        break;
+      case AppMarket.video:
+        window.open('https://cafebazaar.ir/app/com.arash.altafi.bevaghtfilm')
+        break;
+      case AppMarket.neshan:
+        window.open('https://github.com/arashaltafi/Neshan_Navigation')
+        break;
+      case AppMarket.chatGpt:
+        window.open('https://github.com/arashaltafi/ChatGPT')
+        break;
+      case AppMarket.documentBage:
+        window.open('https://cafebazaar.ir/app/com.arash.altafi.documentbag')
+        break;
+      case AppMarket.driving:
+        window.open('https://cafebazaar.ir/app/com.arash.altafi.drivingregulations')
+        break;
+      case AppMarket.bmi:
+        window.open('https://cafebazaar.ir/app/com.arash.altafi.bmicalculator')
+        break;
+      case AppMarket.joke:
+        window.open('https://myket.ir/app/com.arash.altafi.joke')
+        break;
+      case AppMarket.salavatShomar:
+        window.open('https://myket.ir/app/com.arash.altafi.salavat')
+        break;
+      case AppMarket.shop1:
+        window.open('https://appetize.io/embed/fb15t6rqtm2e0g80nut3x3mbk8?device=nexus5&scale=75&orientation=portrait&osVersion=8.1')
+        break;
+      case AppMarket.shop2:
+        window.open('https://appetize.io/embed/v8c24vj0g9bkztvp35chttyfnm?device=nexus5&scale=75&orientation=portrait&osVersion=8.1')
+        break;
+      case AppMarket.WhatsAppDownloader:
+        window.open('https://cafebazaar.ir/app/com.arash.altafi.whatsappdownloader')
+        break;
+      case AppMarket.calculator:
+        window.open('https://cafebazaar.ir/app/com.arash.altafi.calculator')
+        break;
+      case AppMarket.videoToGif:
+        window.open('https://cafebazaar.ir/app/com.arash.altafi.videogif')
+        break;
+      default:
+        break;
+    }
+  }
 
   return (
     <>
@@ -80,7 +162,7 @@ const Works = () => {
           <div className='flex flex-col justify-center items-center'>
             <img className='w-2/3 cursor-pointer dropShadowRed hover:scale-105 transition' src="https://arashaltafi.ir/images//mrEnglish/0.png" alt="mrEnglish" />
             <div className='flex flex-row items-center justify-around gap-16'>
-              <button className='btnHoverWorks'>See In Market</button>
+              <button className='btnHoverWorks' onClick={() => handleOpenMarket(AppMarket.mrEnglish)}>See In Market</button>
               <button className='btnHoverWorks'>Gallery</button>
             </div>
           </div>
@@ -90,7 +172,7 @@ const Works = () => {
           <div className='flex flex-col justify-center items-center'>
             <img className='w-2/3 cursor-pointer dropShadowPurple hover:scale-105 transition' src="https://arashaltafi.ir/images/tvOnline/0.png" alt="tvOnline" />
             <div className='flex flex-row items-center justify-around gap-16'>
-              <button className='btnHoverWorks'>See In Market</button>
+              <button className='btnHoverWorks' onClick={() => handleOpenMarket(AppMarket.tvOnline)}>See In Market</button>
               <button className='btnHoverWorks'>Gallery</button>
             </div>
           </div>
@@ -100,7 +182,7 @@ const Works = () => {
           <div className='flex flex-col justify-center items-center'>
             <img className='w-2/3 cursor-pointer dropShadowWhite hover:scale-105 transition' src="https://arashaltafi.ir/images/speedMeter/0.png" alt="speedMeter" />
             <div className='flex flex-row items-center justify-around gap-16'>
-              <button className='btnHoverWorks'>See In Market</button>
+              <button className='btnHoverWorks' onClick={() => handleOpenMarket(AppMarket.speedMeter)}>See In Market</button>
               <button className='btnHoverWorks'>Gallery</button>
             </div>
           </div>
@@ -110,7 +192,7 @@ const Works = () => {
           <div className='flex flex-col justify-center items-center'>
             <img className='w-2/3 cursor-pointer dropShadowBlue hover:scale-105 transition' src="https://arashaltafi.ir/images/workout/0.png" alt="workout" />
             <div className='flex flex-row items-center justify-around gap-16'>
-              <button className='btnHoverWorks'>See In Market</button>
+              <button className='btnHoverWorks' onClick={() => handleOpenMarket(AppMarket.workout)}>See In Market</button>
               <button className='btnHoverWorks'>Gallery</button>
             </div>
           </div>
@@ -120,7 +202,7 @@ const Works = () => {
           <div className='flex flex-col justify-center items-center'>
             <img className='w-2/3 cursor-pointer dropShadowPurple hover:scale-105 transition' src="https://arashaltafi.ir/images/meditation/icon.png" alt="meditation" />
             <div className='flex flex-row items-center justify-around gap-16'>
-              <button className='btnHoverWorks'>See In Market</button>
+              <button className='btnHoverWorks' onClick={() => handleOpenMarket(AppMarket.meditation)}>See In Market</button>
               <button className='btnHoverWorks'>Gallery</button>
             </div>
           </div>
@@ -130,7 +212,7 @@ const Works = () => {
           <div className='flex flex-col justify-center items-center'>
             <img className='w-2/3 cursor-pointer dropShadowWhite hover:scale-105 transition' src="https://arashaltafi.ir/images/be_vaght_film/be_vaght_film_main2.png" alt="Video" />
             <div className='flex flex-row items-center justify-around gap-16'>
-              <button className='btnHoverWorks'>See In Market</button>
+              <button className='btnHoverWorks' onClick={() => handleOpenMarket(AppMarket.video)}>See In Market</button>
               <button className='btnHoverWorks'>Gallery</button>
             </div>
           </div>
@@ -139,7 +221,7 @@ const Works = () => {
           <div className='flex flex-col justify-center items-center'>
             <img className='w-2/3 cursor-pointer dropShadowPurple hover:scale-105 transition' src="https://arashaltafi.ir/images/neshan/0.png" alt="neshan" />
             <div className='flex flex-row items-center justify-around gap-16'>
-              <button className='btnHoverWorks'>See In Market</button>
+              <button className='btnHoverWorks' onClick={() => handleOpenMarket(AppMarket.neshan)}>See In Market</button>
               <button className='btnHoverWorks'>Gallery</button>
             </div>
           </div>
@@ -149,7 +231,7 @@ const Works = () => {
           <div className='flex flex-col justify-center items-center gap-12'>
             <img className='w-2/3 cursor-pointer dropShadowRed hover:scale-105 transition' src="https://arashaltafi.ir/images/chatGpt/0.png" alt="chatGpt" />
             <div className='flex flex-row items-center justify-around gap-16'>
-              <button className='btnHoverWorks'>See In Market</button>
+              <button className='btnHoverWorks' onClick={() => handleOpenMarket(AppMarket.chatGpt)}>See In Market</button>
               <button className='btnHoverWorks'>Gallery</button>
             </div>
           </div>
@@ -159,7 +241,7 @@ const Works = () => {
           <div className='flex flex-col justify-center items-center gap-12'>
             <img className='w-2/3 cursor-pointer dropShadowBlue hover:scale-105 transition' src="https://arashaltafi.ir/images/documentBage/0.png" alt="documentBage" />
             <div className='flex flex-row items-center justify-around gap-16'>
-              <button className='btnHoverWorks'>See In Market</button>
+              <button className='btnHoverWorks' onClick={() => handleOpenMarket(AppMarket.documentBage)}>See In Market</button>
               <button className='btnHoverWorks'>Gallery</button>
             </div>
           </div>
@@ -169,7 +251,7 @@ const Works = () => {
           <div className='flex flex-col justify-center items-center'>
             <img className='w-2/3 cursor-pointer dropShadowWhite hover:scale-105 transition' src="https://arashaltafi.ir/images/driving/0.png" alt="driving" />
             <div className='flex flex-row items-center justify-around gap-16'>
-              <button className='btnHoverWorks'>See In Market</button>
+              <button className='btnHoverWorks' onClick={() => handleOpenMarket(AppMarket.driving)}>See In Market</button>
               <button className='btnHoverWorks'>Gallery</button>
             </div>
           </div>
@@ -179,7 +261,7 @@ const Works = () => {
           <div className='flex flex-col justify-center items-center'>
             <img className='w-2/3 cursor-pointer dropShadowRed hover:scale-105 transition' src="https://arashaltafi.ir/images/bmi/0.png" alt="bmi" />
             <div className='flex flex-row items-center justify-around gap-16'>
-              <button className='btnHoverWorks'>See In Market</button>
+              <button className='btnHoverWorks' onClick={() => handleOpenMarket(AppMarket.bmi)}>See In Market</button>
               <button className='btnHoverWorks'>Gallery</button>
             </div>
           </div>
@@ -189,7 +271,7 @@ const Works = () => {
           <div className='flex flex-col justify-center items-center'>
             <img className='w-2/3 cursor-pointer dropShadowGreen hover:scale-105 transition' src="https://arashaltafi.ir/images/joke/joke_main.png" alt="joke" />
             <div className='flex flex-row items-center justify-around gap-16'>
-              <button className='btnHoverWorks'>See In Market</button>
+              <button className='btnHoverWorks' onClick={() => handleOpenMarket(AppMarket.joke)}>See In Market</button>
               <button className='btnHoverWorks'>Gallery</button>
             </div>
           </div>
@@ -199,7 +281,7 @@ const Works = () => {
           <div className='flex flex-col justify-center items-center'>
             <img className='w-2/3 cursor-pointer dropShadowPurple hover:scale-105 transition' src="https://arashaltafi.ir/images/salavat_shomar/salavat_main.png" alt="salavat shomar" />
             <div className='flex flex-row items-center justify-around gap-16'>
-              <button className='btnHoverWorks'>See In Market</button>
+              <button className='btnHoverWorks' onClick={() => handleOpenMarket(AppMarket.salavatShomar)}>See In Market</button>
               <button className='btnHoverWorks'>Gallery</button>
             </div>
           </div>
@@ -209,7 +291,7 @@ const Works = () => {
           <div className='flex flex-col justify-center items-center'>
             <img className='w-2/3 cursor-pointer dropShadowRed hover:scale-105 transition' src="https://arashaltafi.ir/images/shop2/shop_main.png" alt="shop" />
             <div className='flex flex-row items-center justify-around gap-16'>
-              <button className='btnHoverWorks'>See In Market</button>
+              <button className='btnHoverWorks' onClick={() => handleOpenMarket(AppMarket.shop2)}>See In Market</button>
               <button className='btnHoverWorks'>Gallery</button>
             </div>
           </div>
@@ -219,7 +301,7 @@ const Works = () => {
           <div className='flex flex-col justify-center items-center'>
             <img className='w-2/3 cursor-pointer dropShadowBlue hover:scale-105 transition' src="https://arashaltafi.ir/images/WhatsAppDownloader/whatsappdownloader_main.png" alt="WhatsAppDownloader" />
             <div className='flex flex-row items-center justify-around gap-16'>
-              <button className='btnHoverWorks'>See In Market</button>
+              <button className='btnHoverWorks' onClick={() => handleOpenMarket(AppMarket.WhatsAppDownloader)}>See In Market</button>
               <button className='btnHoverWorks'>Gallery</button>
             </div>
           </div>
@@ -229,7 +311,7 @@ const Works = () => {
           <div className='flex flex-col justify-center items-center'>
             <img className='w-2/3 cursor-pointer dropShadowGreen hover:scale-105 transition' src="https://arashaltafi.ir/images/calculator/icon.png" alt="calculator" />
             <div className='flex flex-row items-center justify-around gap-16'>
-              <button className='btnHoverWorks'>See In Market</button>
+              <button className='btnHoverWorks' onClick={() => handleOpenMarket(AppMarket.calculator)}>See In Market</button>
               <button className='btnHoverWorks'>Gallery</button>
             </div>
           </div>
@@ -240,7 +322,7 @@ const Works = () => {
           <div className='flex flex-col justify-center items-center'>
             <img className='w-2/3 cursor-pointer dropShadowWhite hover:scale-105 transition' src="https://arashaltafi.ir/images/shop1/shop_main.png" alt="shop" />
             <div className='flex flex-row items-center justify-around gap-16'>
-              <button className='btnHoverWorks'>See In Market</button>
+              <button className='btnHoverWorks' onClick={() => handleOpenMarket(AppMarket.shop1)}>See In Market</button>
               <button className='btnHoverWorks'>Gallery</button>
             </div>
           </div>
@@ -250,7 +332,7 @@ const Works = () => {
           <div className='flex flex-col justify-center items-center'>
             <img className='w-2/3 cursor-pointer dropShadowRed hover:scale-105 transition' src="https://arashaltafi.ir/images/videoToGif/0.png" alt="videoToGif" />
             <div className='flex flex-row items-center justify-around gap-16'>
-              <button className='btnHoverWorks'>See In Market</button>
+              <button className='btnHoverWorks' onClick={() => handleOpenMarket(AppMarket.videoToGif)}>See In Market</button>
               <button className='btnHoverWorks'>Gallery</button>
             </div>
           </div>
