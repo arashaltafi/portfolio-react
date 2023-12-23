@@ -5,6 +5,7 @@ import { useDispatch } from 'react-redux';
 import locationSlice from '../redux/locationSlice';
 import { useTranslation } from 'react-i18next';
 import Typewriter from 'typewriter-effect';
+import VerticallyCenteredModal from '../Components/VerticallyCenteredModal';
 
 enum AppMarket {
   mrEnglish,
@@ -120,6 +121,8 @@ const Works = () => {
     }
   }
 
+  const [modalShow, setModalShow] = useState<boolean>(false);
+
   return (
     <>
       <div className="index-contact h-[80vh] w-full flex justify-center items-center flex-col text-center zIndex20">
@@ -131,6 +134,11 @@ const Works = () => {
           {t('works')}
         </h1>
       </div>
+
+      <VerticallyCenteredModal
+        show={modalShow}
+        onHide={() => setModalShow(false)}
+      />
 
       <div className='h-full w-full bg-zinc-950 flex flex-col gap-20 items-center justify-center pt-6 md:pt-12 pb-12 md:pb-64 zIndex20'>
         <div className='text-2xl md:text-3xl lg:text-4xl'>
@@ -163,7 +171,7 @@ const Works = () => {
             <img className='w-2/3 cursor-pointer dropShadowRed hover:scale-105 transition' src="https://arashaltafi.ir/images//mrEnglish/0.png" alt="mrEnglish" />
             <div className='flex flex-row items-center justify-around gap-16'>
               <button className='btnHoverWorks' onClick={() => handleOpenMarket(AppMarket.mrEnglish)}>See In Market</button>
-              <button className='btnHoverWorks'>Gallery</button>
+              <button className='btnHoverWorks' onClick={() => setModalShow(true)}>Gallery</button>
             </div>
           </div>
 

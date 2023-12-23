@@ -6,6 +6,7 @@ import reportWebVitals from './reportWebVitals';
 import * as serviceWorkerRegistration from './serviceWorkerRegistration';
 import { BrowserRouter } from 'react-router-dom';
 import 'tippy.js/dist/tippy.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import { Provider } from 'react-redux';
 import { store } from './redux/store'
 
