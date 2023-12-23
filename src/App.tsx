@@ -106,7 +106,7 @@ function App() {
   }, [])
 
   return (
-    <div className='relative overflow-hidden select-none'>
+    <div className='relative select-none'>
       <CircleFollowCursor>
         <Routes>
           <Route element={<ScrollToTop />}>

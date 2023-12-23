@@ -1,8 +1,11 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
+import { useLocation } from 'react-router';
 
 const CircleFollowCursor = (prop: any) => {
 
+    const location = useLocation();
     const [position, setPosition] = useState({ x: 0, y: 0 });
+    const [overFlowHidden, setOverFlowHidden] = useState<boolean>(true)
 
     const handleMouseMove = (event: React.MouseEvent<HTMLDivElement>) => {
         setPosition({ x: event.clientX, y: event.clientY });
@@ -12,10 +15,30 @@ const CircleFollowCursor = (prop: any) => {
         setPosition({ x: 0, y: 0 })
     };
 
+    useEffect(() => {
+        switch (location.pathname) {
+            case '/':
+                setOverFlowHidden(true)
+                break;
+            case '/resume':
+                setOverFlowHidden(false)
+                break;
+            case '/contact':
+                setOverFlowHidden(false)
+                break;
+            case '/works':
+                setOverFlowHidden(false)
+                break;
+            default:
+                setOverFlowHidden(true)
+                break;
+        }
+    }, [location])
+
     return (
         <div
             id='parent'
-            className='h-full w-full relative'
+            className={`h-full w-full relative ${overFlowHidden ? 'overflow-hidden' : 'overflow-auto'}`}
             onMouseMove={handleMouseMove}
             onMouseLeave={handleBeforeUnload}
         >
@@ -39,7 +62,7 @@ const CircleFollowCursor = (prop: any) => {
                     </>
             }
             {prop.children}
-        </div>
+        </div >
     );
 };
 
