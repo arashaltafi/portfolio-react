@@ -28,7 +28,6 @@ const ScrollToTop = () => {
             mainRef.current.scrollTo(0, 0);
         }
 
-        console.log("locationSelector.locations", locationSelector.locations);
         const locationCached = locationSelector.locations.find((lc: any) => {
             return lc.pathName === location.pathname
         })
