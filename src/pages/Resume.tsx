@@ -24,16 +24,24 @@ const Resume = () => {
   }, []);
 
   return (
-    <div className="index-contact h-screen w-full flex justify-center items-center flex-col text-center zIndex20">
-      <h1
-        className='title text-4xl md:text-6xl lg:text-7xl xl:text-8xl 2xl:text-9xl'
-        style={{
-          transform: `translate(${Math.round(mousePosition.x)}px, ${Math.round(mousePosition.y)}px)`
-        }}>
-        {t('resume')}
-      </h1>
+    <>
+      <div className="index-contact h-screen w-full flex justify-center items-center flex-col text-center zIndex20">
+        <h1
+          className='title text-4xl md:text-6xl lg:text-7xl xl:text-8xl 2xl:text-9xl'
+          style={{
+            transform: `translate(${Math.round(mousePosition.x)}px, ${Math.round(mousePosition.y)}px)`
+          }}>
+          {t('resume')}
+        </h1>
+      </div>
 
-    </div>
+      <div className='h-full w-full bg-zinc-900 flex flex-col gap-20 items-center justify-center pt-6 md:pt-12 pb-12 md:pb-64'>
+        <h2 className='title text-2xl md:text-3xl lg:text-4xl xl:text-5xl 2xl:text-6xl pt-20'>{t('resume')}</h2>
+
+      </div>
+
+
+    </>
   )
 }
 
