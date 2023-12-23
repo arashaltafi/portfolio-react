@@ -119,7 +119,7 @@ function App() {
         </Routes>
       </CircleFollowCursor>
 
-      <nav className='absolute top-0 left-0 right-0 w-full flex flex-row items-stretch justify-between py-6 px-12 lg:py-8 lg:px-16 zIndex20'>
+      <nav className='fixed top-0 left-0 right-0 w-full flex flex-row items-stretch justify-between py-6 px-12 lg:py-8 lg:px-16 zIndex20'>
         <div className="hidden sm:flex flex-row gap-x-8 items-center justify-center child:title">
           <GrLanguage id="change-language" className="title hover:transition hover:duration-100 hover:delay-100" onClick={changeLang} />
           <Link className="hover:custom-animation hover:transition hover:duration-100 hover:delay-100 py-8 px-4" to="/contact">{t('contact')}</Link>
@@ -134,7 +134,7 @@ function App() {
         </div>
       </nav>
 
-      <div className='absolute bottom-0 left-0 child:font-normal child:text-gray-300 flex flex-col items-center justify-center gap-4 py-6 px-8 lg:py-8 lg:pr-12 mb-4 zIndex20'>
+      <div className='fixed bottom-0 left-0 child:font-normal child:text-gray-300 flex flex-col items-center justify-center gap-4 py-6 px-8 lg:py-8 lg:pr-12 mb-4 zIndex20'>
         <p className="rotate-90 text-xs md:text-sm lg:text-lg text-gray-300">{t('follow_me')}</p>
         <span className="h-[1px] w-20 self-start bg-gray-300 mt-20 mb-16 rotate-90"></span>
         <FaGithub className="subtitle" onClick={() => handleClickLink(LinkType.GITHUB)} />
@@ -146,7 +146,7 @@ function App() {
       </div>
 
       <footer
-        className='absolute bottom-0 right-0 flex flex-row items-stretch justify-end py-6 px-8 lg:py-8 lg:pr-12 mb-4 gap-28 xl:gap-36 lg:gap-48 zIndex20'>
+        className='fixed bottom-0 right-0 flex flex-row items-stretch justify-end py-6 px-8 lg:py-8 lg:pr-12 mb-4 gap-28 xl:gap-36 lg:gap-48 zIndex20'>
         <div className='hidden lg:flex flex-col items-end justify-end flex-1'>
           <div className="child:subtitle-withouthover child:font-normal child:text-gray-300 flex flex-col items-start justify-center gap-3">
             <p>{t('iam')} <span className="text-green-500 font-bold">{t('android')} & {t('web')}</span> {t('developer')}</p>
