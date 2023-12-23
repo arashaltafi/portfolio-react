@@ -71,18 +71,22 @@ const Resume = () => {
         <div className='flex flex-row w-2/3 items-center justify-between gap-8 zIndex20 mt-4'>
           <div className='flex flex-col items-center justify-center gap-6'>
             <FaCode className='subtitle text-green-500 text-5xl' />
-            <h4 className='title'>Advertising</h4>
-            <p className='subtitle font-normal'>Advertising services on mobile phones with notifications</p>
+            <h4 className='title'>{t('advertising')}</h4>
+            <p className='subtitle font-normal'>{t('advertising_description')}</p>
           </div>
           <div className='flex flex-col items-center justify-center gap-6'>
             <FaGoodreads className='subtitle text-green-500 text-5xl' />
-            <h4 className='title'>Application Development</h4>
-            <p className='subtitle font-normal'>Release of Android applications in different markets</p>
+            <h4 className='title'>{t('application_development')}</h4>
+            <p className='subtitle font-normal'>{t('application_description')}</p>
           </div>
         </div>
 
         <span className='h-[1px] my-16 w-3/4 bg-gray-100/50'></span>
         <h2 className='title text-2xl md:text-3xl lg:text-4xl xl:text-5xl 2xl:text-6xl pt-20'>{t('language_skills')}</h2>
+
+
+        <span className='h-[1px] my-16 w-3/4 bg-gray-100/50'></span>
+        <h2 className='title text-2xl md:text-3xl lg:text-4xl xl:text-5xl 2xl:text-6xl pt-20'>{t('programming_skills')}</h2>
 
 
         <span className='h-[1px] my-16 w-3/4 bg-gray-100/50'></span>

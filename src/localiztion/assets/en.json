@@ -44,5 +44,10 @@
     "about_description": "A graduate of computer software engineering and interested in Android and Web programming",
     "computer_technician": "Computer Technician",
     "android_application": "Android Application",
-    "advertising_services": "Advertising Services"
+    "advertising": "Advertising",
+    "advertising_description": "Advertising services on mobile phones with notifications",
+    "advertising_services": "Advertising Services",
+    "programming_skills": "Programming skills",
+    "application_development": "Application Development",
+    "application_description": "Release of Android applications in different markets"
 }
