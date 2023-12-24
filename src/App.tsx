@@ -18,6 +18,7 @@ import NotFound from './pages/NotFound';
 import './localiztion/i18nextSetting';
 import { useTranslation } from 'react-i18next';
 import { IoMdMenu } from "react-icons/io";
+import InstallButton from './Components/InstallButton';
 
 enum LinkType {
   GITHUB = 'github',
@@ -150,6 +151,8 @@ function App() {
 
   return (
     <div className='relative select-none'>
+      <InstallButton />
+
       <CircleFollowCursor>
         <Routes>
           <Route element={<ScrollToTop />}>
