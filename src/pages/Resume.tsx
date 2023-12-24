@@ -51,13 +51,13 @@ const Resume = () => {
 
       <div className='h-full w-full bg-zinc-900 flex flex-col gap-20 items-center justify-center pt-6 md:pt-12 pb-12 md:pb-64 zIndex20'>
         <h2 className='title text-2xl md:text-3xl lg:text-4xl xl:text-5xl 2xl:text-6xl pt-4 md:pt-20'>{t('resume')}</h2>
-        <div className='flex flex-row w-2/3 items-center justify-center gap-8 zIndex20'>
+        <div className='flex flex-row w-1/2 md:w-2/3 items-center justify-center gap-8 zIndex20'>
           <div className='flex flex-col items-center justify-center gap-16'>
-            <p className='subtitle'>{t('resume_description')}</p>
-            <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 grid-rows-3 lg:grid-rows-2 gap-16'>
+            <p className='subtitle text-center'>{t('resume_description')}</p>
+            <div className='grid items-center justify-center text-center grid-cols-1 md:grid-cols-2 lg:grid-cols-3 grid-rows-3 lg:grid-rows-2 gap-16'>
               <p className='subtitle'><span className='title-withouthover text-green-500'>{t('age')}:</span> 26</p>
-              <p className='subtitle'><span className='title-withouthover text-green-500'>{t('address')}:</span> Tehran, Iran</p>
-              <p className='subtitle'><span className='title-withouthover text-green-500'>{t('freelance_ability')}:</span> Yes</p>
+              <p className='subtitle'><span className='title-withouthover text-green-500'>{t('address')}:</span> {t('address_tehran_iran')}</p>
+              <p className='subtitle'><span className='title-withouthover text-green-500'>{t('freelance_ability')}:</span> {t('yes')}</p>
               <p className='subtitle'><span className='title-withouthover text-green-500'>{t('phone')}:</span> +98 918 767 7641</p>
               <p className='subtitle lg:col-start-2 lg:col-end-4'><span className='title-withouthover text-green-500'>{t('email')}:</span> arashaltafi1377@gmail.com</p>
             </div>
@@ -68,22 +68,22 @@ const Resume = () => {
 
         <span className='h-[1px] my-4 md:my-16 w-3/4 bg-gray-100/50'></span>
         <h2 className='title text-2xl md:text-3xl lg:text-4xl xl:text-5xl 2xl:text-6xl pt-4 md:pt-20'>{t('services')}</h2>
-        <div className='flex flex-row w-2/3 items-center justify-between gap-8 zIndex20 mt-4'>
+        <div className='flex flex-row flex-wrap w-1/2 md:w-2/3 items-center justify-center gap-12 zIndex20 mt-4'>
           <div className='flex flex-col items-center justify-center gap-6'>
             <FaCode className='subtitle text-green-500 text-5xl' />
             <h4 className='title'>{t('advertising')}</h4>
-            <p className='subtitle font-normal'>{t('advertising_description')}</p>
+            <p className='subtitle font-normal text-center'>{t('advertising_description')}</p>
           </div>
           <div className='flex flex-col items-center justify-center gap-6'>
             <FaGoodreads className='subtitle text-green-500 text-5xl' />
             <h4 className='title'>{t('application_development')}</h4>
-            <p className='subtitle font-normal'>{t('application_description')}</p>
+            <p className='subtitle font-normal text-center'>{t('application_description')}</p>
           </div>
         </div>
 
         <span className='h-[1px] my-4 md:my-16 w-3/4 bg-gray-100/50'></span>
         <h2 className='title text-2xl md:text-3xl lg:text-4xl xl:text-5xl 2xl:text-6xl pt-4 md:pt-20'>{t('language_skills')}</h2>
-        <div className='flex flex-col w-2/3 items-center justify-between zIndex20 mt-4 gap-12'>
+        <div className='flex flex-col w-1/2 md:w-2/3 items-center justify-between zIndex20 mt-4 gap-12'>
           <div className='flex flex-col gap-2 self-start'>
             <h5 className='subtitle self-start'>{t('persian')}</h5>
             <div className='flex flex-row gap-2'>

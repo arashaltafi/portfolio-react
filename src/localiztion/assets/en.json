@@ -57,5 +57,7 @@
     "see_in_market": "See In Market",
     "prev": "Prev",
     "next": "Next",
-    "close": "Close"
+    "close": "Close",
+    "yes": "Yes",
+    "no": "No"
 }

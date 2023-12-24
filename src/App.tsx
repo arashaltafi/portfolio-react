@@ -182,7 +182,7 @@ function App() {
 
       <div
         className={`
-      md:hidden flex-col items-center justify-center pt-4 transition absolute left-0 top-0 bottom-0 h-full w-1/2 bg-zinc-200 child:title child:text-zinc-900 text-center zIndex40
+      md:hidden flex-col items-center justify-center pt-4 transition fixed left-0 top-0 bottom-0 h-full w-1/2 bg-zinc-200 child:title child:text-zinc-900 text-center zIndex40
       ${showMobileMenu ? 'flex' : 'hidden'} 
       `}
       >
