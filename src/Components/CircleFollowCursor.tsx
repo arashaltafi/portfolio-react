@@ -42,25 +42,28 @@ const CircleFollowCursor = (prop: any) => {
             onMouseMove={handleMouseMove}
             onMouseLeave={handleBeforeUnload}
         >
-            {
-                position.x === 0 && position.y === 0 ? null :
-                    <>
-                        <div
-                            className='fixed w-96 h-96 rounded-full -translate-x-1/2 -translate-y-1/2 opacity-50 radial-background-red zIndex10'
-                            style={{
-                                top: position.y,
-                                left: position.x,
-                            }}
-                        />
-                        <div
-                            className='fixed w-48 h-48 rounded-full -translate-x-1/2 -translate-y-1/2 opacity-50 radial-background-green zIndex10'
-                            style={{
-                                top: position.y,
-                                left: position.x,
-                            }} />
+            <div className='hidden sm:block'>
+                {
+                    position.x === 0 && position.y === 0 ? null :
+                        <>
+                            <div
+                                className='fixed w-96 h-96 rounded-full -translate-x-1/2 -translate-y-1/2 opacity-50 radial-background-red zIndex10'
+                                style={{
+                                    top: position.y,
+                                    left: position.x,
+                                }}
+                            />
+                            <div
+                                className='fixed w-48 h-48 rounded-full -translate-x-1/2 -translate-y-1/2 opacity-50 radial-background-green zIndex10'
+                                style={{
+                                    top: position.y,
+                                    left: position.x,
+                                }} />
 
-                    </>
-            }
+                        </>
+                }
+            </div>
+
             {prop.children}
 
             <span className='hidden sm:block absolute left-1/4 top-0 h-screen w-[1px] bg-[#F5F5F522] blink-animation' />
