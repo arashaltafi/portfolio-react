@@ -149,6 +149,14 @@ function App() {
     setShowMobileMenu(false)
   }
 
+  const handlePhoneClick = (phoneNumber: string) => {
+    window.location.href = `tel:${phoneNumber}`;
+  };
+
+  const handleEmailClick = (emailAddress: string) => {
+    window.location.href = `mailto:${emailAddress}`;
+  };
+
   return (
     <div className='relative select-none'>
       <InstallButton />
@@ -233,8 +241,8 @@ function App() {
         </div>
 
         <div className='child:subtitle child:font-normal child:text-gray-300 hidden md:flex flex-col items-start justify-end gap-3 md:backdrop-blur-[5px]'>
-          <p>{t('e')}: <span className="font-bold">arashaltafi1377@gmail.com</span></p>
-          <p>{t('tel')}: <span className="font-bold">+98 918 767 7641</span></p>
+          <p onClick={() => handleEmailClick('arashaltafi1377@gmail.com')}>{t('e')}: <span className="font-bold">arashaltafi1377@gmail.com</span></p>
+          <p onClick={() => handlePhoneClick('+98 918 767 7641')}>{t('tel')}: <span className="font-bold">+98 918 767 7641</span></p>
         </div>
       </footer>
     </div>
