@@ -152,6 +152,10 @@
     .zIndex30 {
         z-index: 30 !important;
     }
+    
+    .zIndex40 {
+        z-index: 40 !important;
+    }
 
     @keyframes translateAndBack {
         0% {

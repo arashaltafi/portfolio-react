@@ -142,8 +142,10 @@ function App() {
     setIsInContactHome(false)
   }
 
+  const [showMobileMenu, setShowMobileMenu] = useState<boolean>(false)
   const handleClickTab = (url: string) => {
     navigate(url)
+    setShowMobileMenu(false)
   }
 
   return (
@@ -168,7 +170,7 @@ function App() {
           <Link className={`title hover:custom-animation hover:transition hover:duration-100 hover:delay-100 py-8 px-4 ${isInResumeHome && 'text-yellow-300'}`} to="/resume">{t('resume')}</Link>
           <Link className={`title hover:custom-animation hover:transition hover:duration-100 hover:delay-100 py-8 px-4 ${isInHome && 'text-yellow-300'}`} to="/">{t('home')}</Link>
         </div>
-        <div className='md:hidden flex flex-row gap-x-8 items-center justify-center'>
+        <div onClick={() => setShowMobileMenu(true)} className='md:hidden flex flex-row gap-x-8 items-center justify-center'>
           <IoMdMenu className='title w-6 h-6' />
         </div>
         <div id="arashaltafi" className="flex flex-row gap-x-8 items-center justify-center child:title md:backdrop-blur-[5px]" onMouseEnter={changeArashTheme} onMouseLeave={changeArashTheme} onClick={(e) => handleClickPdf(e)}>
@@ -178,7 +180,12 @@ function App() {
         </div>
       </nav>
 
-      <div className='md:hidden flex flex-col items-center justify-center pt-4 absolute left-0 top-0 bottom-0 h-full w-1/2 bg-zinc-200 child:title child:text-zinc-900 text-center zIndex30'>
+      <div
+        className={`
+      md:hidden flex-col items-center justify-center pt-4 transition absolute left-0 top-0 bottom-0 h-full w-1/2 bg-zinc-200 child:title child:text-zinc-900 text-center zIndex40
+      ${showMobileMenu ? 'flex' : 'hidden'} 
+      `}
+      >
         <img className='w-1/3 border-1 border-solid border-red-500 rounded-full' src="/assets/favicon.png" alt="arashaltafi" />
         <span className='w-full h-[1px] bg-zinc-900 m-8'></span>
         <button onClick={() => handleClickTab('/')} className='p-6 hover:text-yellow-500'>{t('home')}</button>
@@ -189,11 +196,16 @@ function App() {
         <span className='w-[90%] h-[1px] bg-zinc-900/20 mx-3'></span>
         <button onClick={() => handleClickTab('/contact')} className='p-6 hover:text-yellow-500'>{t('contact')}</button>
 
-        <div className='flex-1 w-[80%] flex flex-col justify-end items-center child:title child:text-zinc-900'>
+        <div className='flex-1 w-[80%] flex flex-col justify-end items-center child:title child:text-zinc-900 zIndex40'>
           <span className='w-full h-[1px] bg-zinc-900/20 m-3'></span>
           <p className='hover:text-red-500'>{t('arashaltafi')}</p>
         </div>
       </div>
+
+      <div
+        className='absolute right-0 top-0 bottom-0 h-full w-1/2 zIndex20'
+        onClick={() => setShowMobileMenu(false)}
+      />
 
       <div className='fixed bottom-0 left-0 child:font-normal child:text-gray-300 flex flex-col items-center justify-center gap-4 py-6 px-0 md:px-8 lg:py-8 lg:pr-12 mb-4 zIndex20 md:backdrop-blur-[5px]'>
         <p className="rotate-90 text-xs md:text-sm lg:text-lg text-gray-300">{t('follow_me')}</p>
