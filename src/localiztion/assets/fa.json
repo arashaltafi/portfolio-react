@@ -52,5 +52,10 @@
     "application_description": "انتشار اپلیکیشن های اندروید در بازارهای مختلف",
     "persian": "فارسی",
     "english": "انگلیسی",
-    "applications": "اپلیکیشن ها"
+    "applications": "اپلیکیشن ها",
+    "gallery": "گالری",
+    "see_in_market": "در مارکت ببینید",
+    "prev": "قبلی",
+    "next": "بعدی",
+    "close": "بستن"
 }

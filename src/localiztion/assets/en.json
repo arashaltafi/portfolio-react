@@ -52,5 +52,10 @@
     "application_description": "Release of Android applications in different markets",
     "persian": "Persian",
     "english": "English",
-"applications": "Applications"
+    "applications": "Applications",
+    "gallery": "Gallery",
+    "see_in_market": "See In Market",
+    "prev": "Prev",
+    "next": "Next",
+    "close": "Close"
 }

@@ -184,8 +184,8 @@ const Works = () => {
           <div className='flex flex-col justify-center items-center'>
             <img className='w-2/3 cursor-pointer dropShadowRed hover:scale-105 transition' src="https://arashaltafi.ir/images//mrEnglish/0.png" alt="mrEnglish" />
             <div className='flex flex-row items-center justify-around gap-16'>
-              <button className='btnHoverWorks' onClick={() => handleOpenMarket(AppMarket.mrEnglish)}>See In Market</button>
-              <button className='btnHoverWorks' onClick={() => openModal(AppMarket.mrEnglish)}>Gallery</button>
+              <button className='btnHoverWorks' onClick={() => handleOpenMarket(AppMarket.mrEnglish)}>{t('see_in_market')}</button>
+              <button className='btnHoverWorks' onClick={() => openModal(AppMarket.mrEnglish)}>{t('gallery')}</button>
             </div>
           </div>
 
@@ -194,8 +194,8 @@ const Works = () => {
           <div className='flex flex-col justify-center items-center'>
             <img className='w-2/3 cursor-pointer dropShadowPurple hover:scale-105 transition' src="https://arashaltafi.ir/images/tvOnline/0.png" alt="tvOnline" />
             <div className='flex flex-row items-center justify-around gap-16'>
-              <button className='btnHoverWorks' onClick={() => handleOpenMarket(AppMarket.tvOnline)}>See In Market</button>
-              <button className='btnHoverWorks' onClick={() => openModal(AppMarket.tvOnline)}>Gallery</button>
+              <button className='btnHoverWorks' onClick={() => handleOpenMarket(AppMarket.tvOnline)}>{t('see_in_market')}</button>
+              <button className='btnHoverWorks' onClick={() => openModal(AppMarket.tvOnline)}>{t('gallery')}</button>
             </div>
           </div>
 
@@ -204,8 +204,8 @@ const Works = () => {
           <div className='flex flex-col justify-center items-center'>
             <img className='w-2/3 cursor-pointer dropShadowWhite hover:scale-105 transition' src="https://arashaltafi.ir/images/speedMeter/0.png" alt="speedMeter" />
             <div className='flex flex-row items-center justify-around gap-16'>
-              <button className='btnHoverWorks' onClick={() => handleOpenMarket(AppMarket.speedMeter)}>See In Market</button>
-              <button className='btnHoverWorks' onClick={() => openModal(AppMarket.speedMeter)}>Gallery</button>
+              <button className='btnHoverWorks' onClick={() => handleOpenMarket(AppMarket.speedMeter)}>{t('see_in_market')}</button>
+              <button className='btnHoverWorks' onClick={() => openModal(AppMarket.speedMeter)}>{t('gallery')}</button>
             </div>
           </div>
 
@@ -214,8 +214,8 @@ const Works = () => {
           <div className='flex flex-col justify-center items-center'>
             <img className='w-2/3 cursor-pointer dropShadowBlue hover:scale-105 transition' src="https://arashaltafi.ir/images/workout/0.png" alt="workout" />
             <div className='flex flex-row items-center justify-around gap-16'>
-              <button className='btnHoverWorks' onClick={() => handleOpenMarket(AppMarket.workout)}>See In Market</button>
-              <button className='btnHoverWorks' onClick={() => openModal(AppMarket.workout)}>Gallery</button>
+              <button className='btnHoverWorks' onClick={() => handleOpenMarket(AppMarket.workout)}>{t('see_in_market')}</button>
+              <button className='btnHoverWorks' onClick={() => openModal(AppMarket.workout)}>{t('gallery')}</button>
             </div>
           </div>
 
@@ -224,8 +224,8 @@ const Works = () => {
           <div className='flex flex-col justify-center items-center'>
             <img className='w-2/3 cursor-pointer dropShadowPurple hover:scale-105 transition' src="https://arashaltafi.ir/images/meditation/icon.png" alt="meditation" />
             <div className='flex flex-row items-center justify-around gap-16'>
-              <button className='btnHoverWorks' onClick={() => handleOpenMarket(AppMarket.meditation)}>See In Market</button>
-              <button className='btnHoverWorks' onClick={() => openModal(AppMarket.meditation)}>Gallery</button>
+              <button className='btnHoverWorks' onClick={() => handleOpenMarket(AppMarket.meditation)}>{t('see_in_market')}</button>
+              <button className='btnHoverWorks' onClick={() => openModal(AppMarket.meditation)}>{t('gallery')}</button>
             </div>
           </div>
 
@@ -234,8 +234,8 @@ const Works = () => {
           <div className='flex flex-col justify-center items-center'>
             <img className='w-2/3 cursor-pointer dropShadowWhite hover:scale-105 transition' src="https://arashaltafi.ir/images/be_vaght_film/be_vaght_film_main2.png" alt="Video" />
             <div className='flex flex-row items-center justify-around gap-16'>
-              <button className='btnHoverWorks' onClick={() => handleOpenMarket(AppMarket.video)}>See In Market</button>
-              <button className='btnHoverWorks' onClick={() => openModal(AppMarket.video)}>Gallery</button>
+              <button className='btnHoverWorks' onClick={() => handleOpenMarket(AppMarket.video)}>{t('see_in_market')}</button>
+              <button className='btnHoverWorks' onClick={() => openModal(AppMarket.video)}>{t('gallery')}</button>
             </div>
           </div>
 
@@ -243,8 +243,8 @@ const Works = () => {
           <div className='flex flex-col justify-center items-center'>
             <img className='w-2/3 cursor-pointer dropShadowPurple hover:scale-105 transition' src="https://arashaltafi.ir/images/neshan/0.png" alt="neshan" />
             <div className='flex flex-row items-center justify-around gap-16'>
-              <button className='btnHoverWorks' onClick={() => handleOpenMarket(AppMarket.neshan)}>See In Market</button>
-              <button className='btnHoverWorks' onClick={() => openModal(AppMarket.neshan)}>Gallery</button>
+              <button className='btnHoverWorks' onClick={() => handleOpenMarket(AppMarket.neshan)}>{t('see_in_market')}</button>
+              <button className='btnHoverWorks' onClick={() => openModal(AppMarket.neshan)}>{t('gallery')}</button>
             </div>
           </div>
 
@@ -253,8 +253,8 @@ const Works = () => {
           <div className='flex flex-col justify-center items-center gap-12'>
             <img className='w-2/3 cursor-pointer dropShadowRed hover:scale-105 transition' src="https://arashaltafi.ir/images/chatGpt/0.png" alt="chatGpt" />
             <div className='flex flex-row items-center justify-around gap-16'>
-              <button className='btnHoverWorks' onClick={() => handleOpenMarket(AppMarket.chatGpt)}>See In Market</button>
-              <button className='btnHoverWorks' onClick={() => openModal(AppMarket.chatGpt)}>Gallery</button>
+              <button className='btnHoverWorks' onClick={() => handleOpenMarket(AppMarket.chatGpt)}>{t('see_in_market')}</button>
+              <button className='btnHoverWorks' onClick={() => openModal(AppMarket.chatGpt)}>{t('gallery')}</button>
             </div>
           </div>
 
@@ -263,8 +263,8 @@ const Works = () => {
           <div className='flex flex-col justify-center items-center gap-12'>
             <img className='w-2/3 cursor-pointer dropShadowBlue hover:scale-105 transition' src="https://arashaltafi.ir/images/documentBage/0.png" alt="documentBage" />
             <div className='flex flex-row items-center justify-around gap-16'>
-              <button className='btnHoverWorks' onClick={() => handleOpenMarket(AppMarket.documentBage)}>See In Market</button>
-              <button className='btnHoverWorks' onClick={() => openModal(AppMarket.documentBage)}>Gallery</button>
+              <button className='btnHoverWorks' onClick={() => handleOpenMarket(AppMarket.documentBage)}>{t('see_in_market')}</button>
+              <button className='btnHoverWorks' onClick={() => openModal(AppMarket.documentBage)}>{t('gallery')}</button>
             </div>
           </div>
 
@@ -273,8 +273,8 @@ const Works = () => {
           <div className='flex flex-col justify-center items-center'>
             <img className='w-2/3 cursor-pointer dropShadowWhite hover:scale-105 transition' src="https://arashaltafi.ir/images/driving/0.png" alt="driving" />
             <div className='flex flex-row items-center justify-around gap-16'>
-              <button className='btnHoverWorks' onClick={() => handleOpenMarket(AppMarket.driving)}>See In Market</button>
-              <button className='btnHoverWorks' onClick={() => openModal(AppMarket.driving)}>Gallery</button>
+              <button className='btnHoverWorks' onClick={() => handleOpenMarket(AppMarket.driving)}>{t('see_in_market')}</button>
+              <button className='btnHoverWorks' onClick={() => openModal(AppMarket.driving)}>{t('gallery')}</button>
             </div>
           </div>
 
@@ -283,8 +283,8 @@ const Works = () => {
           <div className='flex flex-col justify-center items-center'>
             <img className='w-2/3 cursor-pointer dropShadowRed hover:scale-105 transition' src="https://arashaltafi.ir/images/bmi/0.png" alt="bmi" />
             <div className='flex flex-row items-center justify-around gap-16'>
-              <button className='btnHoverWorks' onClick={() => handleOpenMarket(AppMarket.bmi)}>See In Market</button>
-              <button className='btnHoverWorks' onClick={() => openModal(AppMarket.bmi)}>Gallery</button>
+              <button className='btnHoverWorks' onClick={() => handleOpenMarket(AppMarket.bmi)}>{t('see_in_market')}</button>
+              <button className='btnHoverWorks' onClick={() => openModal(AppMarket.bmi)}>{t('gallery')}</button>
             </div>
           </div>
 
@@ -293,8 +293,8 @@ const Works = () => {
           <div className='flex flex-col justify-center items-center'>
             <img className='w-2/3 cursor-pointer dropShadowGreen hover:scale-105 transition' src="https://arashaltafi.ir/images/joke/joke_main.png" alt="joke" />
             <div className='flex flex-row items-center justify-around gap-16'>
-              <button className='btnHoverWorks' onClick={() => handleOpenMarket(AppMarket.joke)}>See In Market</button>
-              <button className='btnHoverWorks' onClick={() => openModal(AppMarket.joke)}>Gallery</button>
+              <button className='btnHoverWorks' onClick={() => handleOpenMarket(AppMarket.joke)}>{t('see_in_market')}</button>
+              <button className='btnHoverWorks' onClick={() => openModal(AppMarket.joke)}>{t('gallery')}</button>
             </div>
           </div>
 
@@ -303,8 +303,8 @@ const Works = () => {
           <div className='flex flex-col justify-center items-center'>
             <img className='w-2/3 cursor-pointer dropShadowPurple hover:scale-105 transition' src="https://arashaltafi.ir/images/salavat_shomar/salavat_main.png" alt="salavat shomar" />
             <div className='flex flex-row items-center justify-around gap-16'>
-              <button className='btnHoverWorks' onClick={() => handleOpenMarket(AppMarket.salavatShomar)}>See In Market</button>
-              <button className='btnHoverWorks' onClick={() => openModal(AppMarket.salavatShomar)}>Gallery</button>
+              <button className='btnHoverWorks' onClick={() => handleOpenMarket(AppMarket.salavatShomar)}>{t('see_in_market')}</button>
+              <button className='btnHoverWorks' onClick={() => openModal(AppMarket.salavatShomar)}>{t('gallery')}</button>
             </div>
           </div>
 
@@ -313,8 +313,8 @@ const Works = () => {
           <div className='flex flex-col justify-center items-center'>
             <img className='w-2/3 cursor-pointer dropShadowRed hover:scale-105 transition' src="https://arashaltafi.ir/images/shop2/shop_main.png" alt="shop" />
             <div className='flex flex-row items-center justify-around gap-16'>
-              <button className='btnHoverWorks' onClick={() => handleOpenMarket(AppMarket.shop2)}>See In Market</button>
-              <button className='btnHoverWorks' onClick={() => openModal(AppMarket.shop2)}>Gallery</button>
+              <button className='btnHoverWorks' onClick={() => handleOpenMarket(AppMarket.shop2)}>{t('see_in_market')}</button>
+              <button className='btnHoverWorks' onClick={() => openModal(AppMarket.shop2)}>{t('gallery')}</button>
             </div>
           </div>
 
@@ -323,8 +323,8 @@ const Works = () => {
           <div className='flex flex-col justify-center items-center'>
             <img className='w-2/3 cursor-pointer dropShadowBlue hover:scale-105 transition' src="https://arashaltafi.ir/images/WhatsAppDownloader/whatsappdownloader_main.png" alt="WhatsAppDownloader" />
             <div className='flex flex-row items-center justify-around gap-16'>
-              <button className='btnHoverWorks' onClick={() => handleOpenMarket(AppMarket.WhatsAppDownloader)}>See In Market</button>
-              <button className='btnHoverWorks' onClick={() => openModal(AppMarket.WhatsAppDownloader)}>Gallery</button>
+              <button className='btnHoverWorks' onClick={() => handleOpenMarket(AppMarket.WhatsAppDownloader)}>{t('see_in_market')}</button>
+              <button className='btnHoverWorks' onClick={() => openModal(AppMarket.WhatsAppDownloader)}>{t('gallery')}</button>
             </div>
           </div>
 
@@ -333,8 +333,8 @@ const Works = () => {
           <div className='flex flex-col justify-center items-center'>
             <img className='w-2/3 cursor-pointer dropShadowGreen hover:scale-105 transition' src="https://arashaltafi.ir/images/calculator/icon.png" alt="calculator" />
             <div className='flex flex-row items-center justify-around gap-16'>
-              <button className='btnHoverWorks' onClick={() => handleOpenMarket(AppMarket.calculator)}>See In Market</button>
-              <button className='btnHoverWorks' onClick={() => openModal(AppMarket.calculator)}>Gallery</button>
+              <button className='btnHoverWorks' onClick={() => handleOpenMarket(AppMarket.calculator)}>{t('see_in_market')}</button>
+              <button className='btnHoverWorks' onClick={() => openModal(AppMarket.calculator)}>{t('gallery')}</button>
             </div>
           </div>
 
@@ -344,8 +344,8 @@ const Works = () => {
           <div className='flex flex-col justify-center items-center'>
             <img className='w-2/3 cursor-pointer dropShadowWhite hover:scale-105 transition' src="https://arashaltafi.ir/images/shop1/shop_main.png" alt="shop" />
             <div className='flex flex-row items-center justify-around gap-16'>
-              <button className='btnHoverWorks' onClick={() => handleOpenMarket(AppMarket.shop1)}>See In Market</button>
-              <button className='btnHoverWorks' onClick={() => openModal(AppMarket.shop1)}>Gallery</button>
+              <button className='btnHoverWorks' onClick={() => handleOpenMarket(AppMarket.shop1)}>{t('see_in_market')}</button>
+              <button className='btnHoverWorks' onClick={() => openModal(AppMarket.shop1)}>{t('gallery')}</button>
             </div>
           </div>
 
@@ -354,8 +354,8 @@ const Works = () => {
           <div className='flex flex-col justify-center items-center'>
             <img className='w-2/3 cursor-pointer dropShadowRed hover:scale-105 transition' src="https://arashaltafi.ir/images/videoToGif/0.png" alt="videoToGif" />
             <div className='flex flex-row items-center justify-around gap-16'>
-              <button className='btnHoverWorks' onClick={() => handleOpenMarket(AppMarket.videoToGif)}>See In Market</button>
-              <button className='btnHoverWorks' onClick={() => openModal(AppMarket.videoToGif)}>Gallery</button>
+              <button className='btnHoverWorks' onClick={() => handleOpenMarket(AppMarket.videoToGif)}>{t('see_in_market')}</button>
+              <button className='btnHoverWorks' onClick={() => openModal(AppMarket.videoToGif)}>{t('gallery')}</button>
             </div>
           </div>
 

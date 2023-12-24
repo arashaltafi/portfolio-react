@@ -4,6 +4,7 @@ import Carousel from 'react-bootstrap/Carousel';
 import { MdNavigateNext } from 'react-icons/md';
 import { GrFormPrevious } from "react-icons/gr";
 import { IoCloseOutline } from "react-icons/io5";
+import { useTranslation } from 'react-i18next';
 
 interface PropType {
   show: boolean,
@@ -17,6 +18,8 @@ interface PropType {
 }
 
 const VerticallyCenteredModal = (props: PropType) => {
+  const { t } = useTranslation();
+
   const carouselRef = useRef<any>(null);
 
   const handleNext = () => {
@@ -57,14 +60,14 @@ const VerticallyCenteredModal = (props: PropType) => {
         <div className='w-full grid grid-cols-6 grid-rows-1 gap-3'>
           <div onClick={handlePrev} className='flex items-center justify-center gap-1 btnCarouse col-start-1 col-end-2'>
             <GrFormPrevious className='text-2xl' />
-            <button>Prev</button>
+            <button>{t('prev')}</button>
           </div>
           <div onClick={handlePrev} className='flex items-center justify-center gap-1 btnCarouse col-start-2 col-end-3'>
-            <button>Next</button>
+            <button>{t('next')}</button>
             <MdNavigateNext className='text-2xl' />
           </div>
           <div onClick={props.onHide} className='flex items-center justify-center gap-1 btnCarouse col-start-6 col-end-7'>
-            <button>Close</button>
+            <button>{t('close')}</button>
             <IoCloseOutline className='text-2xl' />
           </div>
 
