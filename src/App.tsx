@@ -183,7 +183,7 @@ function App() {
       <div
         className={`
       md:hidden flex-col items-center justify-center pt-4 transition fixed left-0 top-0 bottom-0 h-full w-1/2 bg-zinc-200 child:title child:text-zinc-900 text-center zIndex40
-      ${showMobileMenu ? 'flex' : 'hidden'} 
+      ${showMobileMenu ? 'flex' : 'hidden'}
       `}
       >
         <img className='w-1/3 border-1 border-solid border-red-500 rounded-full' src="/assets/favicon.png" alt="arashaltafi" />
@@ -203,7 +203,7 @@ function App() {
       </div>
 
       <div
-        className='absolute right-0 top-0 bottom-0 h-full w-1/2 zIndex20'
+        className={`md:hidden absolute right-0 top-0 bottom-0 h-full w-1/2 zIndex20 ${showMobileMenu ? 'flex' : 'hidden'}`}
         onClick={() => setShowMobileMenu(false)}
       />
 

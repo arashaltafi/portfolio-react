@@ -62,7 +62,7 @@ const VerticallyCenteredModal = (props: PropType) => {
             <GrFormPrevious className='text-2xl' />
             <button>{t('prev')}</button>
           </div>
-          <div onClick={handlePrev} className='flex items-center justify-center gap-1 btnCarouse col-start-2 col-end-3'>
+          <div onClick={handleNext} className='flex items-center justify-center gap-1 btnCarouse col-start-2 col-end-3'>
             <button>{t('next')}</button>
             <MdNavigateNext className='text-2xl' />
           </div>
