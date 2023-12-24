@@ -99,7 +99,7 @@ function App() {
       localStorage.setItem('lang', 'en')
       i18n.changeLanguage('en');
     }
-    window.location.reload()
+    // window.location.reload()
   }
 
   useEffect(() => {
