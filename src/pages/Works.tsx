@@ -7,6 +7,7 @@ import { useTranslation } from 'react-i18next';
 import Typewriter from 'typewriter-effect';
 import VerticallyCenteredModal from '../Components/VerticallyCenteredModal';
 import getImageUrl from '../utils/ImagesUrl';
+import { MdNavigateNext } from "react-icons/md";
 
 export enum AppMarket {
   mrEnglish,

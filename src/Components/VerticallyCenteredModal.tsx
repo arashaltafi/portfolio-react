@@ -1,6 +1,9 @@
 import { useRef } from 'react'
 import Modal from 'react-bootstrap/Modal';
 import Carousel from 'react-bootstrap/Carousel';
+import { MdNavigateNext } from 'react-icons/md';
+import { GrFormPrevious } from "react-icons/gr";
+import { IoCloseOutline } from "react-icons/io5";
 
 interface PropType {
   show: boolean,
@@ -52,9 +55,19 @@ const VerticallyCenteredModal = (props: PropType) => {
       </Modal.Body>
       <Modal.Footer>
         <div className='w-full grid grid-cols-6 grid-rows-1 gap-3'>
-          <button className='btnCarouse col-start-1 col-end-2' onClick={handlePrev}>Prev</button>
-          <button className='btnCarouse col-start-2 col-end-3' onClick={handleNext}>Next</button>
-          <button className='btnCarouse col-start-6 col-end-7' onClick={props.onHide}>Close</button>
+          <div onClick={handlePrev} className='flex items-center justify-center gap-1 btnCarouse col-start-1 col-end-2'>
+            <GrFormPrevious className='text-2xl' />
+            <button>Prev</button>
+          </div>
+          <div onClick={handlePrev} className='flex items-center justify-center gap-1 btnCarouse col-start-2 col-end-3'>
+            <button>Next</button>
+            <MdNavigateNext className='text-2xl' />
+          </div>
+          <div onClick={props.onHide} className='flex items-center justify-center gap-1 btnCarouse col-start-6 col-end-7'>
+            <button>Close</button>
+            <IoCloseOutline className='text-2xl' />
+          </div>
+
         </div>
       </Modal.Footer>
     </Modal>
