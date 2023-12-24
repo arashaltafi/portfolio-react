@@ -50,8 +50,7 @@ const Resume = () => {
       </div>
 
       <div className='h-full w-full bg-zinc-900 flex flex-col gap-20 items-center justify-center pt-6 md:pt-12 pb-12 md:pb-64 zIndex20'>
-        <h2 className='title text-2xl md:text-3xl lg:text-4xl xl:text-5xl 2xl:text-6xl pt-20'>{t('resume')}</h2>
-
+        <h2 className='title text-2xl md:text-3xl lg:text-4xl xl:text-5xl 2xl:text-6xl pt-4 md:pt-20'>{t('resume')}</h2>
         <div className='flex flex-row w-2/3 items-center justify-center gap-8 zIndex20'>
           <div className='flex flex-col items-center justify-center gap-16'>
             <p className='subtitle'>{t('resume_description')}</p>
@@ -67,8 +66,8 @@ const Resume = () => {
           <img className='hidden md:block w-56 md:w-64 lg:w-80 rounded-lg customHover' src="/assets/arash2.jpg" alt="arash altafi" />
         </div>
 
-        <span className='h-[1px] my-16 w-3/4 bg-gray-100/50'></span>
-        <h2 className='title text-2xl md:text-3xl lg:text-4xl xl:text-5xl 2xl:text-6xl pt-20'>{t('services')}</h2>
+        <span className='h-[1px] my-4 md:my-16 w-3/4 bg-gray-100/50'></span>
+        <h2 className='title text-2xl md:text-3xl lg:text-4xl xl:text-5xl 2xl:text-6xl pt-4 md:pt-20'>{t('services')}</h2>
         <div className='flex flex-row w-2/3 items-center justify-between gap-8 zIndex20 mt-4'>
           <div className='flex flex-col items-center justify-center gap-6'>
             <FaCode className='subtitle text-green-500 text-5xl' />
@@ -82,8 +81,8 @@ const Resume = () => {
           </div>
         </div>
 
-        <span className='h-[1px] my-16 w-3/4 bg-gray-100/50'></span>
-        <h2 className='title text-2xl md:text-3xl lg:text-4xl xl:text-5xl 2xl:text-6xl pt-20'>{t('language_skills')}</h2>
+        <span className='h-[1px] my-4 md:my-16 w-3/4 bg-gray-100/50'></span>
+        <h2 className='title text-2xl md:text-3xl lg:text-4xl xl:text-5xl 2xl:text-6xl pt-4 md:pt-20'>{t('language_skills')}</h2>
         <div className='flex flex-col w-2/3 items-center justify-between zIndex20 mt-4 gap-12'>
           <div className='flex flex-col gap-2 self-start'>
             <h5 className='subtitle self-start'>{t('persian')}</h5>
@@ -108,13 +107,13 @@ const Resume = () => {
         </div>
 
 
-        <span className='h-[1px] my-16 w-3/4 bg-gray-100/50'></span>
-        <h2 className='title text-2xl md:text-3xl lg:text-4xl xl:text-5xl 2xl:text-6xl pt-20'>{t('programming_skills')}</h2>
-        <div className='flex flex-row flex-wrap w-full md:w-1/3 items-center justify-between zIndex20 mt-4 gap-8'>
+        <span className='h-[1px] my-4 md:my-16 w-3/4 bg-gray-100/50'></span>
+        <h2 className='title text-2xl md:text-3xl lg:text-4xl xl:text-5xl 2xl:text-6xl pt-4 md:pt-20'>{t('programming_skills')}</h2>
+        <div className='flex flex-row flex-wrap w-1/2 md:w-1/3 items-center justify-center zIndex20 mt-4 gap-16'>
           <div className='flex flex-col justify-center items-center gap-4'>
             <span className='progressBar-90'>
               <span className='progressBar2'>
-                <p className='subtitle'>90%</p>
+                <p className='subtitle m-auto'>90%</p>
               </span>
             </span>
             <p className='subtitle'>KOTLIN</p>
@@ -122,7 +121,7 @@ const Resume = () => {
           <div className='flex flex-col justify-center items-center gap-4'>
             <span className='progressBar-80'>
               <span className='progressBar2'>
-                <p className='subtitle'>80%</p>
+                <p className='subtitle m-auto'>80%</p>
               </span>
             </span>
             <p className='subtitle'>JAVA</p>
@@ -130,7 +129,7 @@ const Resume = () => {
           <div className='flex flex-col justify-center items-center gap-4'>
             <span className='progressBar-70'>
               <span className='progressBar2'>
-                <p className='subtitle'>70%</p>
+                <p className='subtitle m-auto'>70%</p>
               </span>
             </span>
             <p className='subtitle'>PHP</p>
@@ -146,7 +145,7 @@ const Resume = () => {
           <div className='flex flex-col justify-center items-center gap-4'>
             <span className='progressBar-70'>
               <span className='progressBar2'>
-                <p className='subtitle'>70%</p>
+                <p className='subtitle m-auto'>70%</p>
               </span>
             </span>
             <p className='subtitle'>MONGO</p>
@@ -154,7 +153,7 @@ const Resume = () => {
           <div className='flex flex-col justify-center items-center gap-4'>
             <span className='progressBar-90'>
               <span className='progressBar2'>
-                <p className='subtitle'>90%</p>
+                <p className='subtitle m-auto'>90%</p>
               </span>
             </span>
             <p className='subtitle'>JS</p>
@@ -162,7 +161,7 @@ const Resume = () => {
           <div className='flex flex-col justify-center items-center gap-4'>
             <span className='progressBar-90'>
               <span className='progressBar2'>
-                <p className='subtitle'>90%</p>
+                <p className='subtitle m-auto'>90%</p>
               </span>
             </span>
             <p className='subtitle'>REACT</p>
@@ -170,7 +169,7 @@ const Resume = () => {
           <div className='flex flex-col justify-center items-center gap-4'>
             <span className='progressBar-80'>
               <span className='progressBar2'>
-                <p className='subtitle'>80%</p>
+                <p className='subtitle m-auto'>80%</p>
               </span>
             </span>
             <p className='subtitle'>NODE JS</p>
@@ -178,7 +177,7 @@ const Resume = () => {
           <div className='flex flex-col justify-center items-center gap-4'>
             <span className='progressBar-80'>
               <span className='progressBar2'>
-                <p className='subtitle'>80%</p>
+                <p className='subtitle m-auto'>80%</p>
               </span>
             </span>
             <p className='subtitle'>EXPRESS JS</p>
@@ -186,8 +185,8 @@ const Resume = () => {
         </div>
 
 
-        <span className='h-[1px] my-16 w-3/4 bg-gray-100/50'></span>
-        <h2 className='title text-2xl md:text-3xl lg:text-4xl xl:text-5xl 2xl:text-6xl pt-20'>{t('knowledge')}</h2>
+        <span className='h-[1px] my-4 md:my-16 w-3/4 bg-gray-100/50'></span>
+        <h2 className='title text-2xl md:text-3xl lg:text-4xl xl:text-5xl 2xl:text-6xl pt-4 md:pt-20'>{t('knowledge')}</h2>
         <div className='w-1/2 grid grid-cols-2 gap-16 items-center justify-center zIndex20'>
           <div className='flex flex-row items-center justify-center'>
             <TiTick className='subtitle text-green-500 text-5xl' />
@@ -203,9 +202,9 @@ const Resume = () => {
           </div>
         </div>
 
-        <span className='h-[1px] my-16 w-3/4 bg-gray-100/50'></span>
-        <h2 className='title text-2xl md:text-3xl lg:text-4xl xl:text-5xl 2xl:text-6xl pt-20'>{t('about_me')}</h2>
-        <p className='subtitle font-normal'>{t('about_description')}</p>
+        <span className='h-[1px] my-4 md:my-16 w-3/4 bg-gray-100/50'></span>
+        <h2 className='title text-2xl md:text-3xl lg:text-4xl xl:text-5xl 2xl:text-6xl pt-4 md:pt-20'>{t('about_me')}</h2>
+        <p className='subtitle font-normal w-1/2 md:w-2/3 text-center'>{t('about_description')}</p>
 
       </div>
 

@@ -226,37 +226,37 @@
     }
 
     .progressBar-100 {
-        @apply relative flex items-center justify-center w-28 h-28 rounded-full;
+        @apply relative flex items-center justify-center w-24 h-24 md:w-28 md:h-28 rounded-full;
         background: conic-gradient(#4CAF50 0% 100%, transparent 0% 100%);
     }
 
     .progressBar-90 {
-        @apply relative flex items-center justify-center w-28 h-28 rounded-full;
+        @apply relative flex items-center justify-center w-24 h-24 md:w-28 md:h-28 rounded-full;
         background: conic-gradient(#4CAF50 0% 90%, transparent 0% 100%);
     }
 
     .progressBar-80 {
-        @apply relative flex items-center justify-center w-28 h-28 rounded-full;
+        @apply relative flex items-center justify-center w-24 h-24 md:w-28 md:h-28 rounded-full;
         background: conic-gradient(#4CAF50 0% 80%, transparent 0% 100%);
     }
 
     .progressBar-70 {
-        @apply relative flex items-center justify-center w-28 h-28 rounded-full;
+        @apply relative flex items-center justify-center w-24 h-24 md:w-28 md:h-28 rounded-full;
         background: conic-gradient(#4CAF50 0% 70%, transparent 0% 100%);
     }
 
     .progressBar-60 {
-        @apply relative flex items-center justify-center w-28 h-28 rounded-full;
+        @apply relative flex items-center justify-center w-24 h-24 md:w-28 md:h-28 rounded-full;
         background: conic-gradient(#4CAF50 0% 60%, transparent 0% 100%);
     }
 
     .progressBar-50 {
-        @apply relative flex items-center justify-center w-28 h-28 rounded-full;
+        @apply relative flex items-center justify-center w-24 h-24 md:w-28 md:h-28 rounded-full;
         background: conic-gradient(#4CAF50 0% 50%, transparent 0% 100%);
     }
 
     .progressBar2 {
-        @apply absolute flex items-center justify-center w-26 h-26 rounded-full bg-zinc-900;
+        @apply absolute flex items-center justify-center w-20 h-20 md:w-26 md:h-26 rounded-full bg-zinc-900;
     }
 
     .dropShadowRed {
