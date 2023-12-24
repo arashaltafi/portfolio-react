@@ -71,12 +71,12 @@ const Resume = () => {
         <div className='flex flex-row flex-wrap w-1/2 md:w-2/3 items-center justify-center gap-12 zIndex20 mt-4'>
           <div className='flex flex-col items-center justify-center gap-6'>
             <FaCode className='subtitle text-green-500 text-5xl' />
-            <h4 className='title'>{t('advertising')}</h4>
+            <h4 className='title text-center'>{t('advertising')}</h4>
             <p className='subtitle font-normal text-center'>{t('advertising_description')}</p>
           </div>
           <div className='flex flex-col items-center justify-center gap-6'>
             <FaGoodreads className='subtitle text-green-500 text-5xl' />
-            <h4 className='title'>{t('application_development')}</h4>
+            <h4 className='title text-center'>{t('application_development')}</h4>
             <p className='subtitle font-normal text-center'>{t('application_description')}</p>
           </div>
         </div>

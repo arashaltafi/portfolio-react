@@ -182,22 +182,24 @@ function App() {
 
       <div
         className={`
-      md:hidden flex-col items-center justify-center pt-4 transition fixed left-0 top-0 bottom-0 h-full w-1/2 bg-zinc-200 child:title child:text-zinc-900 text-center zIndex40
+      md:hidden flex-col items-center justify-center pt-4 transition fixed left-0 top-0 bottom-0 h-full w-1/2 bg-zinc-600 child:title child:text-zinc-100 text-center zIndex40
       ${showMobileMenu ? 'flex' : 'hidden'}
       `}
       >
         <img className='w-1/3 border-1 border-solid border-red-500 rounded-full' src="/assets/favicon.png" alt="arashaltafi" />
-        <span className='w-full h-[1px] bg-zinc-900 m-8'></span>
+        <span className='w-full h-[1px] bg-zinc-200 m-8'></span>
         <button onClick={() => handleClickTab('/')} className='p-6 hover:text-yellow-500'>{t('home')}</button>
-        <span className='w-[90%] h-[1px] bg-zinc-900/20 mx-3'></span>
+        <span className='w-[90%] h-[1px] bg-zinc-200/20 mx-3'></span>
         <button onClick={() => handleClickTab('/resume')} className='p-6 hover:text-yellow-500'>{t('resume')}</button>
-        <span className='w-[90%] h-[1px] bg-zinc-900/20 mx-3'></span>
+        <span className='w-[90%] h-[1px] bg-zinc-200/20 mx-3'></span>
         <button onClick={() => handleClickTab('/works')} className='p-6 hover:text-yellow-500'>{t('works')}</button>
-        <span className='w-[90%] h-[1px] bg-zinc-900/20 mx-3'></span>
+        <span className='w-[90%] h-[1px] bg-zinc-200/20 mx-3'></span>
         <button onClick={() => handleClickTab('/contact')} className='p-6 hover:text-yellow-500'>{t('contact')}</button>
+        <span className='w-[90%] h-[1px] bg-zinc-200/20 mx-3'></span>
+        <button onClick={changeLang} className='p-6 hover:text-yellow-500'>{t('change_lang')}</button>
 
-        <div className='flex-1 w-[80%] flex flex-col justify-end items-center child:title child:text-zinc-900 zIndex40'>
-          <span className='w-full h-[1px] bg-zinc-900/20 m-3'></span>
+        <div className='flex-1 w-[80%] flex flex-col justify-end items-center child:title child:text-zinc-100 zIndex40'>
+          <span className='w-full h-[1px] bg-zinc-200/20 m-3'></span>
           <p className='hover:text-red-500'>{t('arashaltafi')}</p>
         </div>
       </div>
