@@ -129,7 +129,7 @@
     }
 
     .btnCarouse {
-        @apply p-3 bg-yellow-500 text-white text-xl font-bold transition duration-100 hover:text-yellow-400 hover:bg-zinc-700 rounded-2xl shadow-xl cursor-pointer;
+        @apply p-2 sm:p-3 bg-yellow-500 text-white text-xs sm:text-xl font-bold transition duration-100 hover:text-yellow-400 hover:bg-zinc-700 rounded-xl sm:rounded-2xl shadow-xl cursor-pointer;
         box-shadow: 2px 2px 5px dark;
     }
 

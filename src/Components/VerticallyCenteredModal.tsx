@@ -59,16 +59,16 @@ const VerticallyCenteredModal = (props: PropType) => {
       <Modal.Footer>
         <div className='w-full grid grid-cols-6 grid-rows-1 gap-3'>
           <div onClick={handlePrev} className='flex items-center justify-center gap-1 btnCarouse col-start-1 col-end-2'>
-            <GrFormPrevious className='text-2xl' />
+            <GrFormPrevious className='hidden sm:block text-xl md:text-2xl' />
             <button>{t('prev')}</button>
           </div>
           <div onClick={handleNext} className='flex items-center justify-center gap-1 btnCarouse col-start-2 col-end-3'>
             <button>{t('next')}</button>
-            <MdNavigateNext className='text-2xl' />
+            <MdNavigateNext className='hidden sm:block text-xl md:text-2xl' />
           </div>
           <div onClick={props.onHide} className='flex items-center justify-center gap-1 btnCarouse col-start-6 col-end-7'>
             <button>{t('close')}</button>
-            <IoCloseOutline className='text-2xl' />
+            <IoCloseOutline className='hidden sm:block text-xl md:text-2xl' />
           </div>
 
         </div>
