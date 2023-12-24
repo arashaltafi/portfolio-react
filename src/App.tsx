@@ -1,4 +1,4 @@
-import { Routes, Route, Link, useLocation } from 'react-router-dom';
+import { Routes, Route, Link, useLocation, useNavigate } from 'react-router-dom';
 import { useEffect, useRef, useState } from "react";
 import tippy from 'tippy.js';
 import ScrollToTop from "./Components/ScrollToTop";
@@ -17,6 +17,7 @@ import { GrLanguage } from "react-icons/gr";
 import NotFound from './pages/NotFound';
 import './localiztion/i18nextSetting';
 import { useTranslation } from 'react-i18next';
+import { IoMdMenu } from "react-icons/io";
 
 enum LinkType {
   GITHUB = 'github',
@@ -30,6 +31,7 @@ enum LinkType {
 function App() {
   const { t, i18n } = useTranslation();
   const location = useLocation();
+  const navigate = useNavigate();
 
   const handleClickLink = (linkType: LinkType) => {
     switch (linkType) {
@@ -140,6 +142,10 @@ function App() {
     setIsInContactHome(false)
   }
 
+  const handleClickTab = (url: string) => {
+    navigate(url)
+  }
+
   return (
     <div className='relative select-none'>
       <CircleFollowCursor>
@@ -155,21 +161,41 @@ function App() {
       </CircleFollowCursor>
 
       <nav className='fixed top-0 left-0 right-0 w-full flex flex-row items-stretch justify-between py-6 px-12 lg:py-8 lg:px-16 zIndex20'>
-        <div className="hidden sm:flex flex-row gap-x-8 items-center justify-center backdrop-blur-[5px]">
+        <div className="hidden md:flex flex-row gap-x-8 items-center justify-center md:backdrop-blur-[5px]">
           <GrLanguage id="change-language" className="title hover:transition hover:duration-100 hover:delay-100" onClick={changeLang} />
           <Link className={`title hover:custom-animation hover:transition hover:duration-100 hover:delay-100 py-8 px-4 ${isInContactHome && 'text-yellow-300'}`} to="/contact">{t('contact')}</Link>
           <Link className={`title hover:custom-animation hover:transition hover:duration-100 hover:delay-100 py-8 px-4 ${isInWorksHome && 'text-yellow-300'}`} to="/works">{t('works')}</Link>
           <Link className={`title hover:custom-animation hover:transition hover:duration-100 hover:delay-100 py-8 px-4 ${isInResumeHome && 'text-yellow-300'}`} to="/resume">{t('resume')}</Link>
           <Link className={`title hover:custom-animation hover:transition hover:duration-100 hover:delay-100 py-8 px-4 ${isInHome && 'text-yellow-300'}`} to="/">{t('home')}</Link>
         </div>
-        <div id="arashaltafi" className="flex flex-row gap-x-8 items-center justify-center child:title backdrop-blur-[5px]" onMouseEnter={changeArashTheme} onMouseLeave={changeArashTheme} onClick={(e) => handleClickPdf(e)}>
+        <div className='md:hidden flex flex-row gap-x-8 items-center justify-center'>
+          <IoMdMenu className='title w-6 h-6' />
+        </div>
+        <div id="arashaltafi" className="flex flex-row gap-x-8 items-center justify-center child:title md:backdrop-blur-[5px]" onMouseEnter={changeArashTheme} onMouseLeave={changeArashTheme} onClick={(e) => handleClickPdf(e)}>
           <div className="hover:custom-animation-rotate hover:transition hover:duration-100 hover:delay-100 py-8 px-4">
             <span ref={arash} className="text-gray-400 hover:text-yellow-300">{t('arash')}</span> {t('altafi')}
           </div>
         </div>
       </nav>
 
-      <div className='fixed bottom-0 left-0 child:font-normal child:text-gray-300 flex flex-col items-center justify-center gap-4 py-6 px-0 md:px-8 lg:py-8 lg:pr-12 mb-4 zIndex20 backdrop-blur-[5px]'>
+      <div className='md:hidden flex flex-col items-center justify-center pt-4 absolute left-0 top-0 bottom-0 h-full w-1/2 bg-zinc-200 child:title child:text-zinc-900 text-center zIndex30'>
+        <img className='w-1/3 border-1 border-solid border-red-500 rounded-full' src="/assets/favicon.png" alt="arashaltafi" />
+        <span className='w-full h-[1px] bg-zinc-900 m-8'></span>
+        <button onClick={() => handleClickTab('/')} className='p-6 hover:text-yellow-500'>{t('home')}</button>
+        <span className='w-[90%] h-[1px] bg-zinc-900/20 mx-3'></span>
+        <button onClick={() => handleClickTab('/resume')} className='p-6 hover:text-yellow-500'>{t('resume')}</button>
+        <span className='w-[90%] h-[1px] bg-zinc-900/20 mx-3'></span>
+        <button onClick={() => handleClickTab('/works')} className='p-6 hover:text-yellow-500'>{t('works')}</button>
+        <span className='w-[90%] h-[1px] bg-zinc-900/20 mx-3'></span>
+        <button onClick={() => handleClickTab('/contact')} className='p-6 hover:text-yellow-500'>{t('contact')}</button>
+
+        <div className='flex-1 w-[80%] flex flex-col justify-end items-center child:title child:text-zinc-900'>
+          <span className='w-full h-[1px] bg-zinc-900/20 m-3'></span>
+          <p className='hover:text-red-500'>{t('arashaltafi')}</p>
+        </div>
+      </div>
+
+      <div className='fixed bottom-0 left-0 child:font-normal child:text-gray-300 flex flex-col items-center justify-center gap-4 py-6 px-0 md:px-8 lg:py-8 lg:pr-12 mb-4 zIndex20 md:backdrop-blur-[5px]'>
         <p className="rotate-90 text-xs md:text-sm lg:text-lg text-gray-300">{t('follow_me')}</p>
         <span className="h-[1px] w-20 self-start bg-gray-300 mt-20 mb-16 rotate-90"></span>
         <FaGithub className="subtitle" onClick={() => handleClickLink(LinkType.GITHUB)} />
@@ -182,14 +208,14 @@ function App() {
 
       <footer
         className='fixed bottom-0 right-0 flex flex-row items-stretch justify-end py-6 px-8 lg:py-8 lg:pr-12 mb-4 gap-28 xl:gap-36 lg:gap-48 zIndex20'>
-        <div className='hidden lg:flex flex-col items-end justify-end flex-1 backdrop-blur-[5px]'>
+        <div className='hidden lg:flex flex-col items-end justify-end flex-1 md:backdrop-blur-[5px]'>
           <div className="child:subtitle-withouthover child:font-normal child:text-gray-300 flex flex-col items-start justify-center gap-3">
             <p>{t('iam')} <span className="text-green-500 font-bold">{t('android')} & {t('web')}</span> {t('developer')}</p>
             <p><span className="text-purple-500 font-bold">{t('kotlin')}</span> & <span className="text-sky-500">{t('react')}</span></p>
           </div>
         </div>
 
-        <div className='child:subtitle child:font-normal child:text-gray-300 hidden md:flex flex-col items-start justify-end gap-3 backdrop-blur-[5px]'>
+        <div className='child:subtitle child:font-normal child:text-gray-300 hidden md:flex flex-col items-start justify-end gap-3 md:backdrop-blur-[5px]'>
           <p>{t('e')}: <span className="font-bold">arashaltafi1377@gmail.com</span></p>
           <p>{t('tel')}: <span className="font-bold">+98 918 767 7641</span></p>
         </div>
