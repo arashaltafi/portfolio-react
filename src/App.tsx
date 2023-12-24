@@ -174,7 +174,7 @@ function App() {
       </CircleFollowCursor>
 
       <nav className='fixed top-0 left-0 right-0 w-full flex flex-row items-stretch justify-between py-6 px-12 lg:py-8 lg:px-16 zIndex20'>
-        <div className="hidden md:flex flex-row gap-x-8 items-center justify-center md:backdrop-blur-[5px]">
+        <div className={`hidden md:flex flex-row gap-x-8 items-center justify-center ${isInHome ? '' : 'md:backdrop-blur-[5px]'}`}>
           <GrLanguage id="change-language" className="title hover:transition hover:duration-100 hover:delay-100" onClick={changeLang} />
           <Link className={`title hover:custom-animation hover:transition hover:duration-100 hover:delay-100 py-8 px-4 ${isInContactHome && 'text-yellow-300'}`} to="/contact">{t('contact')}</Link>
           <Link className={`title hover:custom-animation hover:transition hover:duration-100 hover:delay-100 py-8 px-4 ${isInWorksHome && 'text-yellow-300'}`} to="/works">{t('works')}</Link>
@@ -184,7 +184,7 @@ function App() {
         <div onClick={() => setShowMobileMenu(true)} className='md:hidden flex flex-row gap-x-8 items-center justify-center'>
           <IoMdMenu className='title w-6 h-6' />
         </div>
-        <div id="arashaltafi" className="flex flex-row gap-x-8 items-center justify-center child:title md:backdrop-blur-[5px]" onMouseEnter={changeArashTheme} onMouseLeave={changeArashTheme} onClick={(e) => handleClickPdf(e)}>
+        <div id="arashaltafi" className={`flex flex-row gap-x-8 items-center justify-center child:title ${isInHome ? '' : 'md:backdrop-blur-[5px]'}`} onMouseEnter={changeArashTheme} onMouseLeave={changeArashTheme} onClick={(e) => handleClickPdf(e)}>
           <div className="hover:custom-animation-rotate hover:transition hover:duration-100 hover:delay-100 py-8 px-4">
             <span ref={arash} className="text-gray-400 hover:text-yellow-300">{t('arash')}</span> {t('altafi')}
           </div>
@@ -220,7 +220,7 @@ function App() {
         onClick={() => setShowMobileMenu(false)}
       />
 
-      <div className='fixed bottom-0 left-0 child:font-normal child:text-gray-300 flex flex-col items-center justify-center gap-4 py-6 px-0 md:px-8 lg:py-8 lg:pr-12 mb-4 zIndex20 md:backdrop-blur-[5px]'>
+      <div className={`fixed bottom-0 left-0 child:font-normal child:text-gray-300 flex flex-col items-center justify-center gap-4 py-6 px-0 md:px-8 lg:py-8 lg:pr-12 mb-4 zIndex20 ${isInHome ? '' : 'md:backdrop-blur-[5px]'}`}>
         <p className="rotate-90 text-xs md:text-sm lg:text-lg text-gray-300">{t('follow_me')}</p>
         <span className="h-[1px] w-20 self-start bg-gray-300 mt-20 mb-16 rotate-90"></span>
         <FaGithub className="subtitle" onClick={() => handleClickLink(LinkType.GITHUB)} />
@@ -233,14 +233,14 @@ function App() {
 
       <footer
         className='fixed bottom-0 right-0 flex flex-row items-stretch justify-end py-6 px-8 lg:py-8 lg:pr-12 mb-4 gap-28 xl:gap-36 lg:gap-48 zIndex20'>
-        <div className='hidden lg:flex flex-col items-end justify-end flex-1 md:backdrop-blur-[5px]'>
+        <div className={`hidden lg:flex flex-col items-end justify-end flex-1 ${isInHome ? '' : 'md:backdrop-blur-[5px]'}`}>
           <div className="child:subtitle-withouthover child:font-normal child:text-gray-300 flex flex-col items-start justify-center gap-3">
             <p>{t('iam')} <span className="text-green-500 font-bold">{t('android')} & {t('web')}</span> {t('developer')}</p>
             <p><span className="text-purple-500 font-bold">{t('kotlin')}</span> & <span className="text-sky-500">{t('react')}</span></p>
           </div>
         </div>
 
-        <div className='child:subtitle child:font-normal child:text-gray-300 hidden md:flex flex-col items-start justify-end gap-3 md:backdrop-blur-[5px]'>
+        <div className={`child:subtitle child:font-normal child:text-gray-300 hidden md:flex flex-col items-start justify-end gap-3 ${isInHome ? '' : 'md:backdrop-blur-[5px]'}`}>
           <p onClick={() => handleEmailClick('arashaltafi1377@gmail.com')}>{t('e')}: <span className="font-bold">arashaltafi1377@gmail.com</span></p>
           <p onClick={() => handlePhoneClick('+98 918 767 7641')}>{t('tel')}: <span className="font-bold">+98 918 767 7641</span></p>
         </div>
