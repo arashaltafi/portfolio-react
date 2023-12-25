@@ -1,0 +1,23 @@
+@font-face {
+    font-family: "vazir-bold";
+    src: url('/public/assets/fonts/font_bold.ttf');
+}
+
+@font-face {
+    font-family: "vazir-light";
+    src: url('/public/assets/fonts/font_light.ttf');
+}
+
+@font-face {
+    font-family: "vazir-medium";
+    src: url('/public/assets/fonts/font_medium.ttf');
+}
+
+@font-face {
+    font-family: "vazir-normal";
+    src: url('/public/assets/fonts/font_normal.ttf');
+}
+
+body {
+    font-family: "vazir-normal", "vazir-medium", serif, sans-serif, monospace !important;
+}

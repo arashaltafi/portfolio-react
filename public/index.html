@@ -33,6 +33,7 @@
 
   <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
   <meta name="google" value="notranslate" />
+  <link rel="stylesheet" href="./assets/global.css">
   <title>Arash Altafi</title>
 </head>
 
@@ -41,9 +42,9 @@
   <div id="root"></div>
 
   <script>
-    // document.addEventListener("contextmenu", (event) =>
-    //   event.preventDefault()
-    // );
+    document.addEventListener("contextmenu", (event) =>
+      event.preventDefault()
+    );
     
     document.onkeydown = function (e) {
       if (event.keyCode == 123) {
